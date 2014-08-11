@@ -1,2 +1,6 @@
+title: Petyo Kostakov
+
 source:      .
 destination: ./_site
+
+permalink: pretty
