@@ -1,0 +1,20 @@
+{
+  "name": "PetyoKostakovBlog",
+  "version": "0.0.1",
+  "homepage": "https://github.com/PetyoKostakov/PetyoKostakov.github.io",
+  "authors": [
+    "Petyo Kostakov <pkostako@cisco.com>"
+  ],
+  "description": "Personal Blog",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "github-markdown-css": "~1.0.2"
+  }
+}
