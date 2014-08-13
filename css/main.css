@@ -122,6 +122,25 @@ pre {
   -moz-border-radius: 100px;
 }
 
+.rating > span:before {
+   position: absolute;
+}
+.one-str > span:nth-child(-n+1):before {
+  content: "\2605";
+}
+.two-str > span:nth-child(-n+2):before {
+  content: "\2605";
+}
+.three-str > span:nth-child(-n+3):before {
+  content: "\2605";
+}
+.four-str > span:nth-child(-n+4):before {
+  content: "\2605";
+}
+.five-str > span:nth-child(-n+5):before {
+  content: "\2605";
+}
+
 @media (max-width: 600px) {
   #site-title {
     font-size: 45px;
