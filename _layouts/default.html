@@ -4,7 +4,8 @@
 <body>
   <div id="site-wrapper">
     <header>
-      <p id="site-title-wrapper"><a id="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></p>
+      <img src="{{ "/img/avatar.jpg" | prepend: site.baseurl }}" class="avatar inline-block" width="70px" height="70px" >
+      <a id="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </header>
     <div class="page-content">
       {{ content }}

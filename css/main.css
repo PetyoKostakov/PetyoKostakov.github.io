@@ -60,10 +60,21 @@ pre {
 
 /* Layout Styles */
 /* ----------------------------------------------------------*/
+/* Main Classes */ 
+.inline-block {
+  display: inline-block;
+}
+
 
 /* Site header */
-/* Site title */
+#site-title {
+  font-size: 70px;
+  color: rgb(68, 68, 68);
+  vertical-align: super;
+}
 
+/* Site title */
+/*
 #site-title-wrapper {
   line-height: 0.5;
   text-align: center;
@@ -94,9 +105,25 @@ pre {
   left: 100%;
   margin-left: 15px;
 }
+*/
 
 /* Content */
 
 
 /* article */
 
+/* Avatar */
+.avatar {
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+@media (max-width: 600px) {
+  #site-title {
+    font-size: 45px;
+  }
+}
