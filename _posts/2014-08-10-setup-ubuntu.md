@@ -44,7 +44,7 @@ sudo apt-get install nodejs
 	sudo apt-get update
 	sudo apt-get install nodejs
 [link] https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#ubuntu-mint-elementary-os
-4. Sublime
+4. Sublime 
 5. Install Git
 	sudo apt-get install git-core git-gui gitk
 6. Tweak Tool(If use ubuntu gnome) - may be allready installedcan customize Gnome UI and add minimize icon to windowses
