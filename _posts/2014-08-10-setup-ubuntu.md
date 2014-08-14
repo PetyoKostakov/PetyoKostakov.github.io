@@ -38,20 +38,20 @@ sudo apt-get install nodejs
 
 1. dropbox - for reading this file
 2. Chrome - from site
-4. install node on ubuntu - write this in terminal
+3. install node on ubuntu - write this in terminal
 	sudo apt-get install python-software-properties python g++ make
 	sudo add-apt-repository ppa:chris-lea/node.js
 	sudo apt-get update
 	sudo apt-get install nodejs
 [link] https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#ubuntu-mint-elementary-os
-3. Sublime
-6. Install Git
+4. Sublime
+5. Install Git
 	sudo apt-get install git-core git-gui gitk
-5. Tweak Tool(If use ubuntu gnome) - may be allready installedcan customize Gnome UI and add minimize icon to windowses
+6. Tweak Tool(If use ubuntu gnome) - may be allready installedcan customize Gnome UI and add minimize icon to windowses
 	Instalation from "Software center"
 - Top Bar -> Show Data -> switch ON
 - Windows -> Minimize -> switch ON
-6. Linux keys
+7. Linux keys
 	Go to Settings -> Keyboard -> Shortcuts tab:
 		- Laungers -> Home folder -> change to Super + E
 		- System -> Lock screen -> change to Super + L
