@@ -68,6 +68,10 @@ adds side bar menu OS options and adds open file with browser and shortcut to op
 
 [[LINK]](https://github.com/titoBouzout/SideBarEnhancements)
 
+### JSFormat
+
+use: <code>Ctrl + Alt + F</code>
+
 <h2>Settings</h2>
 <h3>Default global settings</h3>
 <ol>
