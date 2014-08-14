@@ -62,6 +62,11 @@ layout: post
 
 <h3>Git Gutter</h3>
 <p>Show changes, deleted lines and new lines in text editor of sublime</p>
+### Sidebar Enhancements 
+
+adds side bar menu OS options and adds open file with browser and shortcut to open it
+
+[[LINK]](https://github.com/titoBouzout/SideBarEnhancements)
 
 <h2>Settings</h2>
 <h3>Default global settings</h3>
