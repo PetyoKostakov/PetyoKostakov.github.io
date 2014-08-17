@@ -129,7 +129,7 @@ use: <code>Ctrl + Alt + F</code>
 	{ "keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} }
 ]
 ```
-
+<!---
 <h3>Dot file</h3>
 <p>Sublime Text 2 stores settings, themes, and plugins in the ~/Library/Application Support/Sublime Text 2 directory in three separate folders:</p>
 <ul>
@@ -137,3 +137,4 @@ use: <code>Ctrl + Alt + F</code>
 	<li>Packages</li>
 	<li>Pristine Packages</li>
 </ul>
+-->
