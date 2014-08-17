@@ -4,9 +4,22 @@
 <body>
   <div id="site-wrapper">
     <header>
-      <img src="{{ "/img/avatar.jpg" | prepend: site.baseurl }}" class="avatar inline-block" width="70px" height="70px" >
-      <a id="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-      <blockquote>“Truth can only be found in one place: the code.” </blockquote> 
+      <div class="markdown-body">
+        <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">blog</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx"><b>author</b></span> <span class="o">=</span> <span class="s1"><strong>'Petyo Kostakov'</strong></span><span class="p">,</span>
+    <b><span class="nx">quote</span> <span class="o">=</span> <span class="s1">'Truth can only be found in one place: the code. - Linus Torvalds'</b></span>
+<span class="p">}</span>
+        </code></pre></div></div>
+      <nav id="site-navigation">
+        <ul>
+          <span>[</span>
+          <li><a href="/">Home, </a></li>
+          <li><a href="/books">Books, </a></li>
+          <li><a href="/links">Links, </a></li>
+          <li><a href="/about">About</a></li>
+          <span>]</span>
+        </ul>
+      </nav>
     </header>
     <div id="page-content">
       {{ content }}
