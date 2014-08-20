@@ -4,30 +4,35 @@ author: Petyo Kostakov
 layout: post
 ---
 
-<h3>Install 'Package Control'</h3>
-<p>
-	Package Control is third party tool for sublime like npm(NodeJS),apt - Advanced Packaging Tool(Unix). This tool connects to server that stores packages(applications) for sublime. Package control take care for installation from user perspective it`s needed only to type the name of the package that you want and it will install it. After installation sometimes is needed restart of sublime in order to application came in to action.
-</p>
-<ol>
-	<li>Open sublime console - ctrl + ` ||  <code>View</code> ->  <code>Show Console</code></li>
-	<li>Paste this code:<pre>import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())</pre></li>
-	<li>Hit  <code>Enter </code> and wait for installation to complete. You can watch progress in the bottom left corner of sublime. This place is also status bar.</li>
-</ol>
-<a href="https://sublime.wbond.net/"><span class="link-tab">[LINK]</span></a>
+# Install 'Package Control'
 
-<h2>Plugins</h2>
-<p>All plugins are installed with 'Package Control'.<br> Steps:</p>
-<ol>
-	<li>Open 'Package Control' <code>Ctrl + Shift + P</code></li>
-	<li>Type <code>'Insall Package'</code></li>
-	<li>Choose <code>'Package Cotrol: Install Package'</code></li>
-</ol>
-<p>After installation of some tools, sublime may need restert in order plugins to work</p>
+Package Control is third party tool for sublime like npm(NodeJS),apt - Advanced Packaging Tool(Unix). This tool connects to server that stores packages(applications) for sublime. Package control take care for installation from user perspective it`s needed only to type the name of the package that you want and it will install it. After installation sometimes is needed restart of sublime in order to application came in to action.
 
-<h3>Emmet</h3>
-<a href="http://emmet.io/"><span class="link-tab">[Site]</span></a>
-<a href="http://scotch.io/bar-talk/write-html-crazy-fast-with-emmet-an-interactive-guide"><span class="link-tab">[Interactive Guide]</span></a>
-<h3>JSHint</h3>
+
+
+1. Open sublime console - ctrl + ` ||  <code>View</code> ->  <code>Show Console</code>
+2. Paste this code:<pre>import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())</pre>
+3. Hit  <code>Enter </code> and wait for installation to complete. You can watch progress in the bottom left corner of sublime. This place is also status bar.
+
+[[LINK]](https://sublime.wbond.net)
+
+# Plugins
+All plugins are installed with 'Package Control'.
+Steps:
+
+1. Open 'Package Control' <code>Ctrl + Shift + P</code>
+2. Type <code>'Insall Package'</code>
+3. Choose <code>'Package Cotrol: Install Package'</code>
+
+After installation of some tools, sublime may need restert in order plugins to work
+
+## Emmet 
+
+<div class="rating five-str"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
+
+[[Site]](http://emmet.io/) [[Interactive Gruide]](http://scotch.io/bar-talk/write-html-crazy-fast-with-emmet-an-interactive-guide)
+
+## JSHint
 <p>JSHint is community driven tool not Douglas Drocford driven tool.</p>
 
 <ul>
@@ -60,29 +65,34 @@ layout: post
 <a href="https://github.com/SublimeCodeIntel/SublimeCodeIntel"><span class="link-tab">[LINK]</span></a>
 <a href="https://www.youtube.com/watch?v=GK9zaSj1C4M"><span class="link-tab">[VIDEO]</span></a>
 
-<h3>Git Gutter</h3>
-<p>Show changes, deleted lines and new lines in text editor of sublime</p>
-### Sidebar Enhancements 
+## Git Gutter
+
+<div class="rating five-str"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
+
+Show changes, deleted lines and new lines in text editor of sublime
+
+## Sidebar Enhancements 
 
 adds side bar menu OS options and adds open file with browser and shortcut to open it
 
 [[LINK]](https://github.com/titoBouzout/SideBarEnhancements)
 
-### JSFormat
+## JSFormat
 
 use: <code>Ctrl + Alt + F</code>
 
-<h2>Settings</h2>
-<h3>Default global settings</h3>
-<ol>
-	<li><code>Preferences</code> -> <code>Settings User</code></li>
-	<li>
-		<p>Enter this and save:</p>
-	</li>
-</ol>
+# Settings
+
+## Default global settings<
+
+1. <code>Preferences</code> -> <code>Settings User</code>
+2. Enter this and save:
+
 ``` javascript
 {
 	"save_on_focus_lost": true // Set to true to automatically save files when switch to something else than the openned file
+	"spell_check": true,
+	"dictionary": "Packages/Language - English/en_US.dic"
 }
 ```
 <p>You can set also:</p>
@@ -120,7 +130,7 @@ use: <code>Ctrl + Alt + F</code>
 	<li><code>Preferences</code> -> <code>Key Bindings - User</code></li>
 	<li>File file with this:</li>
 </ol>
-``` javascript
+``` javascript 
 [
 	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
 	{ "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 15.0 } },
