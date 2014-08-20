@@ -110,9 +110,16 @@ sudo apt-get install git-core git-gui gitk
 
 /etc/hosts - add - 10.22.31.147 ecp-review
 
+install elastic search
+https://gist.github.com/wingdspur/2026107
+
+sudo /etc/init.d/elasticsearch start
 
 
-install java JDK
+
+
+
+## Install Java 7
 
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
@@ -120,8 +127,29 @@ sudo apt-get install oracle-java7-installer
 
 sudo apt-get install oracle-java7-set-default
 
+## Insall Java 8
 
-install elastic search
-https://gist.github.com/wingdspur/2026107
+Type in terminal:
 
-sudo /etc/init.d/elasticsearch start
+```
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+```
+
+After finishing type `$ java -version` and must output this:
+
+```
+java version "1.8.0"
+Java(TM) SE Runtime Environment (build 1.8.0-b132)
+Java HotSpot(TM) 64-Bit Server VM (build 25.0-b70, mixed mode)
+```
+
+remove java 8:
+
+sudo dpkg --list | grep -i jdk // check installed packages
+
+sudo apt-get remove oracle-java8-installer
+
+sudo dpkg --list | grep -i jdk // check installed packages again
+java -version // for sure
