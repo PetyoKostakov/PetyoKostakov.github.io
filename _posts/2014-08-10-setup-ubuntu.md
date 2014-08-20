@@ -185,10 +185,3 @@ touch Text.txt
 * Go to Settings -> Keyboard -> Shortcuts tab:
 	- Laungers -> Home folder -> change to Super + E
 	- System -> Lock screen -> change to Super + L
-
-```javascript
-var blog = {
-    author = 'Petyo Kostakov',
-    quote = 'Truth can only be found in one place: the code. - Linus Torvalds'
-}
-```
