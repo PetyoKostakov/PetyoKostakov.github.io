@@ -101,9 +101,11 @@ sudo apt-get install nodejs
 
 ## Install Java 7
 
+```
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java7-installer
+```
 
 sudo apt-get install oracle-java7-set-default
 
@@ -133,6 +135,12 @@ sudo apt-get remove oracle-java8-installer
 sudo dpkg --list | grep -i jdk // check installed packages again
 java -version // for sure
 ```
+
+## JBoss 7 as
+
+on eclipce will be needed 'JBossAS Tool'
+
+[[DW]](http://jbossas.jboss.org/downloads)
 
 ## MongoDB
 
