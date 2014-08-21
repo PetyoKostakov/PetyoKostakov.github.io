@@ -185,3 +185,7 @@ touch Text.txt
 * Go to Settings -> Keyboard -> Shortcuts tab:
 	- Laungers -> Home folder -> change to Super + E
 	- System -> Lock screen -> change to Super + L
+
+## Lubuntu 
+
+* Manage monitors tool - install from software center 'Arandr'
