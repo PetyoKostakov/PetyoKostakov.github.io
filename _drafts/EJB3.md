@@ -22,3 +22,11 @@ EJB Container - environment where EJB components operate. This environment offer
 
 JavaBeans Query Language (EJB QL) was introduced, which gave developers the ability to query entity bean instances
 using a language that resembled SQL.
+
+Stateless session bean is Java class with class level annotation of @Stateless
+
+@PostConstruct - method happen after injection is performed and before first business method in the bean class is called.
+
+@PreDestroy - happens before container destroy unused/expired bean
+
+@Interceptor - define interceptor class

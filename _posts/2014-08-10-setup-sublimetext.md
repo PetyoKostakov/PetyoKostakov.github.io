@@ -81,6 +81,16 @@ adds side bar menu OS options and adds open file with browser and shortcut to op
 
 use: <code>Ctrl + Alt + F</code>
 
+## Markdown Editing
+
+Markdown GMF Settings 
+
+```javascript
+{
+	"color_scheme": "Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme",
+}
+```
+
 # Settings
 
 ## Default global settings<
@@ -130,6 +140,7 @@ use: <code>Ctrl + Alt + F</code>
 	<li><code>Preferences</code> -> <code>Key Bindings - User</code></li>
 	<li>File file with this:</li>
 </ol>
+
 ``` javascript 
 [
 	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },

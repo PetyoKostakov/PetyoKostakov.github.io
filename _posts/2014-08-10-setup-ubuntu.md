@@ -23,10 +23,14 @@ In this article I will share my personal list of applications and other stuff th
 * Dropbox or PCloud[[DW Dropbox]](https://www.dropbox.com/install)
 * Sublime Text 3 [[DW]](http://www.sublimetext.com/3) [[Sublime setup tutorial]](#) 
 * Eclipse
-* Skype
 * Winetricks - for running windows apps insight linux
 * Photoshop CS2 - free version
 * Okular - reading and editing pdfs 
+
+Not for developer purposes but a must:
+
+* Skype
+* vlc
 
 # Bash 
 
@@ -197,3 +201,4 @@ touch Text.txt
 ## Lubuntu 
 
 * Manage monitors tool - install from software center 'Arandr'
+* [[BG language settings]](http://askubuntu.com/questions/216787/how-to-install-select-and-use-different-keyboard-layouts-of-the-same-language-i            )
