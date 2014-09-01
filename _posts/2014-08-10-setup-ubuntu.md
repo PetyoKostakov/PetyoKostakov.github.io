@@ -70,6 +70,17 @@ parse_git_branch() {
 
 In terminal: `sudo apt-get install git-core git-gui gitk`
 
+settings:
+
+set sublime as default text editor
+git config --global core.editor "subl -n -w"
+set default merge tool
+git config --global merge.tool meld
+set email and name
+git config --global user.email "your_email@example.com"
+git config --global user.name "your_name"
+
+
 ## Jekyll
 requer notejs
 ```
