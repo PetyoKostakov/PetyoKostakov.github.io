@@ -7,23 +7,25 @@
       <div class="markdown-body">
         <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">blog</span> <span class="o">=</span> <span class="p">{</span>
     <b><span class="nx">author</span> <span class="o">=</span> <span class="s1">'Petyo Kostakov'</span><span class="p">,</span></b>
-    <b><span class="nx">quote</span> <span class="o">=</span> <span class="s1">'Truth can only be found in one place: the code. - Linus Torvalds'</span></b>
+    <b><span class="nx">quote</span> <span class="o">=</span> <span class="s1">'Truth can only be found in one place: the code.'</span></b>
 <span class="p">}</span>
 </code></pre></div></div>
       <nav id="site-navigation">
         <ul>
-          <span>[</span>
-          <li><a href="/">Home, </a></li>
-          <li><a href="/books">Books, </a></li>
-          <li><a href="/links">Links, </a></li>
-          <li><a href="/about">About</a></li>
-          <span>]</span>
+            {% include navList.html %}
         </ul>
       </nav>
     </header>
     <div id="page-content">
       {{ content }}
     </div>
+    <hr>
+    <footer>
+      <ul class="inline-block">
+        {% include navList.html %}
+      </ul>
+      <p class="copyright" style="display: inline-block">Petyo Kostakov &copy;</p>
+    </footer>
   </div>
 </body>
 </html>
