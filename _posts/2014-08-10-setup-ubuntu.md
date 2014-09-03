@@ -209,6 +209,10 @@ touch Text.txt
 	- Laungers -> Home folder -> change to Super + E
 	- System -> Lock screen -> change to Super + L
 
+## Ubuntu Gnome 
+
+* never group programs on alt + tab - open tweaktool -> Extentions -> Alternatetab ON
+
 ## Lubuntu 
 
 * Manage monitors tool - install from software center 'Arandr'
