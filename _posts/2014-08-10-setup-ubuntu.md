@@ -157,6 +157,10 @@ on eclipce will be needed 'JBossAS Tool'
 
 [[DW]](http://jbossas.jboss.org/downloads)
 
+## mySQL
+
+sudo apt-get install mysql-server
+
 ## MongoDB
 
 Usage:
