@@ -1,5 +1,6 @@
 # TODO
 
+* write rtcl about how to develop project on github
 * create about page which contains:
     - about me
     - about the site
