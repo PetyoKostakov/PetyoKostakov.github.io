@@ -45,3 +45,22 @@ Git:
 &nbsp;
 
 <a href="http://www.layoutit.com/">LayoutIt</a> - Bootstrap builder with drag and drop
+
+# Web
+
+## JavaScript
+
+* [JavaScript Memory Management Masterclass by Andy Osmani](https://speakerdeck.com/addyosmani/javascript-memory-management-masterclass)
+
+* [Redemption from Callback Hell](https://www.youtube.com/watch?v=hf1T_AONQJU)
+
+* Scalable JavaScript Application Architecture:Nicholas Zakas
+
+[Video](https://www.youtube.com/watch?v=vXjVFPosQHw)
+[Presentation](http://www.slideshare.net/nzakas/scalable-javascript-application-architecture)
+
+* [You're Missing the Point of Promises](http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/)
+
+# Funny
+
+[WAT](https://www.destroyallsoftware.com/talks/wat)
