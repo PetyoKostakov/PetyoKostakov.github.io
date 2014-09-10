@@ -7,6 +7,12 @@ layout: default
 
 <hr>
 
+## Programming
+
+[The Pragmatic Programmer: From Journeyman to Master](http://www.amazon.com/The-Pragmatic-Programmer-Journeyman-Master/dp/020161622X)  
+by Andrew Hunt, David Thomas 
+Must read book! Recommended by Zlatozar Zhelyazkov.
+
 ## JavaScript
 
 **JavaScript: The Definitive Guide**  
