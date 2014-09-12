@@ -1,0 +1,21 @@
+---
+layout: post
+---
+
+## pause on javascript exception
+
+https://developer.chrome.com/devtools/docs/javascript-debugging#pause-on-exceptions
+
+## Event Listeners panel
+
+On elements tab -> the tab on the right of 'Styles'
+
+## Show paint flashes - watch what is repainted on the page
+
+Timeline tab -> in "drawer" -> Rendering -> Show paint rectangles
+
+## conditional breakpoints
+
+## DOM Breakpoints
+
+Source panel DOM breakpoints

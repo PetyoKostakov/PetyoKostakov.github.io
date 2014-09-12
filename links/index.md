@@ -61,6 +61,8 @@ Git:
 
 * [You're Missing the Point of Promises](http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/)
 
+* [Advanced Front-end Debugging](http://www.infoq.com/presentations/web-front-end-debugging) demo is on firefox but browser feature exists on other browsers.
+
 # Funny
 
 [WAT](https://www.destroyallsoftware.com/talks/wat)
