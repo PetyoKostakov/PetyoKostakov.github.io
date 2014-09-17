@@ -66,3 +66,7 @@ Git:
 # Funny
 
 [WAT](https://www.destroyallsoftware.com/talks/wat)
+
+# Else
+
+[fast typing test](http://10fastfingers.com/typing-test/english)
