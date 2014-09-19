@@ -1,5 +1,6 @@
 # TODO
 
+* write rtcl about javascript performance over High Performance javascript book. And write automatic tests with karma that can be executed anytime new version of the browser is released.
 * write rtcl about how to develop project on github
 * create about page which contains:
     - about me
