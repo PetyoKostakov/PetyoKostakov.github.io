@@ -4,7 +4,7 @@ author: Petyo Kostakov
 layout: post
 ---
 
-# Install 'Package Control'
+# Install 'Package Control' {% include fiveStar.html %} <div>i<p></p></p>
 
 Package Control is third party tool for sublime like npm(NodeJS),apt - Advanced Packaging Tool(Unix). This tool connects to server that stores packages(applications) for sublime. Package control take care for installation from user perspective it`s needed only to type the name of the package that you want and it will install it. After installation sometimes is needed restart of sublime in order to application came in to action.
 
@@ -26,23 +26,17 @@ Steps:
 
 After installation of some tools, sublime may need restert in order plugins to work
 
-## Emmet 
-
-<div class="rating five-str"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
+## Emmet {% include fiveStar.html %}
 
 [[Site]](http://emmet.io/) [[Interactive Gruide]](http://scotch.io/bar-talk/write-html-crazy-fast-with-emmet-an-interactive-guide)
 
-## JSHint
-<p>JSHint is community driven tool not Douglas Drocford driven tool.</p>
+## JSHint {% include fiveStar.html %}
 
-<ul>
-	<li>Type in terminal: <code>npm install jshint -g</code> (You may need to install npm in order to install this tool)</li>
-	<li>From 'Package Control' install 'JSHint Guttter'</li>
-	<li>
-		You can set some globals that you use in 'globals' filed in:<br>
-		<code>Preferences</code> -> <code>Package Settings</code> -> <code>JSHint Gutter</code> -> <code>Set Linting Preferences</code>
-	</li>
-</ul>
+JSHint is community driven tool not Douglas Drocford driven tool.
+
+* Type in terminal: <code>npm install jshint -g</code> (You may need to install npm in order to install this tool)
+* From 'Package Control' install 'JSHint Guttter'
+* You can set some globals that you use in 'globals' filed in:  <code>Preferences</code> -> <code>Package Settings</code> -> <code>JSHint Gutter</code> -> <code>Set Linting Preferences</code>
 
 ``` javascript
 "globals": {
@@ -52,32 +46,31 @@ After installation of some tools, sublime may need restert in order plugins to w
 }
 ```
 
-<p>You can lint your files with <code>ctrl + shift + J</code>Also you can set to check your file for errors on edit and save. <br> Steps:</p>
-<ul>
-	<li><code>Preferences</code> -> <code>Package Settings</code> -> <code>JSHint Guttor</code> -> <code>Set Plugin Options</code></li>
-	<li>Set to <code>true</code> whatever your needs are</li>
-</ul>
+You can lint your files with <code>ctrl + shift + J</code>Also you can set to check your file for errors on edit and save.  Steps:
 
-<a href="https://github.com/victorporof/Sublime-JSHint"><span class="link-tab">[LINK]</span></a>
+* <code>Preferences</code> -> <code>Package Settings</code> -> <code>JSHint Guttor</code> -> <code>Set Plugin Options</code>
+* Set to <code>true</code> whatever your needs are
+
+[[LINK]](https://github.com/victorporof/Sublime-JSHint)
 
 <h3>SublimeCodeIntel</h3>
 <p>(CodeInteligence)autocomplete and go to definitions</p>
 <a href="https://github.com/SublimeCodeIntel/SublimeCodeIntel"><span class="link-tab">[LINK]</span></a>
 <a href="https://www.youtube.com/watch?v=GK9zaSj1C4M"><span class="link-tab">[VIDEO]</span></a>
 
-## Git Gutter
+## Git Gutter <div class="rating five-str"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
 
 <div class="rating five-str"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
 
 Show changes, deleted lines and new lines in text editor of sublime
 
-## Sidebar Enhancements 
+## Sidebar Enhancements <div class="rating four-str"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
 
 adds side bar menu OS options and adds open file with browser and shortcut to open it
 
 [[LINK]](https://github.com/titoBouzout/SideBarEnhancements)
 
-## JSFormat
+## JSFormat <div class="rating four-str"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
 
 use: <code>Ctrl + Alt + F</code>
 
@@ -93,7 +86,7 @@ Markdown GMF Settings
 
 # Settings
 
-## Default global settings<
+## Default global settings
 
 1. <code>Preferences</code> -> <code>Settings User</code>
 2. Enter this and save:
@@ -112,7 +105,7 @@ Markdown GMF Settings
 	"translate_tabs_to_spaces": true,
 ```
 
-<h3>Default javascript settings</h3>
+### Default javascript settings</h3>
 <ol>
 	<li>
 		Open some file with js extention || Open new file and go to <code>View</code> -> <code>Syntax</code> -> <code>JavaScript</code> -> <code>JavaScript</code>
