@@ -22,7 +22,7 @@ a:visited { color: #205caa; }
 
 ul, ol { margin-left: 50px; }
 article { margin-top: 25px; }
-p { 
+p {
   margin-top: 15px;
   margin-bottom: 15px
 }
@@ -40,7 +40,7 @@ code {
   padding: 1px 5px;
 }
 
-pre { 
+pre {
   width: 100%;
   word-break: break-word;
 }
@@ -58,7 +58,7 @@ pre {
 
 /* Layout Styles */
 /* ----------------------------------------------------------*/
-/* Main Classes */ 
+/* Main Classes */
 .inline-block, footer li {
   display: inline-block;
 }
@@ -79,7 +79,11 @@ blockquote {
   min-height: 300px; /* TODO: remove this line when there is enough articles */
 }
 
-
+/* =============== RATING =============== */
+.rating {
+  display: inline-block;
+  margin: 0 10px;
+}
 .rating > span:before {
    position: absolute;
 }
@@ -98,6 +102,7 @@ blockquote {
 .five-str > span:nth-child(-n+5):before {
   content: "\2605";
 }
+/* =============== RATING =============== */
 
 /* =============== HEADER =============== */
 nav {
@@ -161,3 +166,16 @@ footer, footer li {
   }
 }
 /* ============================================ */
+
+/* */
+.more-info-btn {
+  font-size: initial !important;
+  font-weight: bold;
+  display: inherit;
+  border: 1px solid #222;
+  background: #999;
+  padding: 1px 8px;
+  display: inline-block;
+  border-radius: 100%;
+  vertical-align: super;
+}
