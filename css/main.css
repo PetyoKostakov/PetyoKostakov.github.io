@@ -156,16 +156,14 @@ footer, footer li {
 }
 /* ==================================== */
 
-/* =============== MEDIA QUERYS =============== */
-@media (max-width: 800px) {
-  body {
-    font-size: 14px;
-  }
-  header .markdown-body pre>code {
-    font-size: 0.9em;
-  }
+/* =============== POSTS LIST =============== */
+.posts {
+  list-style-type: none;
 }
-/* ============================================ */
+.posts .post-date {
+  color: #777;
+}
+/* ========================================== */
 
 /* */
 .more-info-btn {
@@ -179,3 +177,14 @@ footer, footer li {
   border-radius: 100%;
   vertical-align: super;
 }
+
+/* =============== MEDIA QUERYS =============== */
+@media (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+  header .markdown-body pre>code {
+    font-size: 0.9em;
+  }
+}
+/* ============================================ */
