@@ -1,40 +1,41 @@
 ---
-title: Setup Ubuntu for web programming
+title: Setup Ubuntu for developing
 author: Petyo Kostakov
 layout: post
+tags: ['ubuntu', 'gnome', 'setup', 'settings', 'apps', 'how to install', 'develop']
 ---
 
 #Intro
 
-For developing I personally prefer Ubuntu Gnome [[LINK]](http://ubuntugnome.org/).
+For developing I personally prefer Ubuntu Gnome. [<core-icon icon="link"></core-icon>](http://ubuntugnome.org/)
 
-Reasons are:
+Reasons:
 
+* Buntu family OS has amazing community, for this reason trouble shooting takes minutes not days.
+* It`s free and open source
 * It`s highly user friendly and beautiful.
-* It`s less buggy compared with Ubuntu ( This is litle strange :) )
-* It`s almost the same as Ubuntu
+* It`s less buggy compared with Ubuntu (This is litle strange :) )
 
-In this article I will share my personal list of applications and other stuff that you need in order to develop.
+In this article you can find my personal list of applications and other stuff that you need in order to develop on variety of technologies.
 
-# Applications
+# Applications <core-icon icon="apps"></core-icon>
 
-* Chrome [[Dowload]](https://www.google.com/intl/EN/chrome/browser/)
-* Open this article and follow
-* Dropbox or PCloud[[DW Dropbox]](https://www.dropbox.com/install)
-* Sublime Text 3 [[DW]](http://www.sublimetext.com/3) [[Sublime setup tutorial]](#) 
+* Chrome [<core-icon icon="file-download"></core-icon>](https://www.google.com/intl/EN/chrome/browser/)
+* Dropbox, PCloud, Drive or other
+* Sublime Text 3 [<core-icon icon="file-download"></core-icon>](http://www.sublimetext.com/3) [Sublime setup tutorial](/2014/08/10/setup-sublimetext/) 
 * Eclipse
 * Winetricks - for running windows apps insight linux
-* Photoshop CS2 - free version
-* Okular - reading and editing pdfs 
+* Photoshop CS2 - free version, installation with winetricks
 
 Not for developer purposes but a must:
 
 * Skype
 * vlc
+* Okular - reading and editing pdfs. 
 
-# Bash 
+# Bash setup
 
-In order to have great user experiance with your terminal you can set some settings. My favorite are listet below.
+In order to have great user experience with your terminal you can set some color settings. My favorite are listed below.
 
 * Open  `~/.bashrc` with your favorite text editor
 * change SP1 with this:
@@ -43,7 +44,7 @@ In order to have great user experiance with your terminal you can set some setti
 PS1='\[\033[1;36m\](\t) \[\033[00m\]\[\033[01;34m\]\w\[\033[00m\]\[\e[0;35m\]$(parse_git_branch)\n\[\e[0m\]$ '
 ```
 
-Shoud loog like this:
+Should look like this:
 
 ```
 # If this is an xterm set the title to user@host:dir
@@ -55,7 +56,7 @@ xterm*|rxvt*)
     ;;
 esac
 ```
-At the end of the file paste this function to parse git branch
+At the end of the file paste this function to parse git branch name
 
 ```
 parse_git_branch() {
@@ -68,29 +69,35 @@ parse_git_branch() {
 # Tools
 ## Git
 
-In terminal: `sudo apt-get install git-core git-gui gitk`
+In terminal: `sudo apt-get install git-core git-gui gitk meld`
 
 settings:
 
-set sublime as default text editor
-git config --global core.editor "subl -n -w"
+* set sublime as default text editor
+`git config --global core.editor "subl -n -w"`
 
-set default merge tool
-git config --global merge.tool meld
+* set default merge tool
+`git config --global merge.tool meld`
 
-set email and name
+* set email and user name
+
+```
 git config --global user.email "your_email@example.com"
 git config --global user.name "your_name"
+```
 
 
-## Jekyll
-requer notejs
+## Jekyll [<core-icon icon="link"></core-icon>](http://jekyllrb.com/)
+
+require nodejs
+
 ```
 sudo `apt-get install ruby1.9.1-dev make`
 gem install jekyll
 ```
 
 use:
+
 ```
 jekyll serve --watch - start server and watching for changes
 jekyll build - make '_site' dir
@@ -100,7 +107,7 @@ jekyll build - make '_site' dir
 
 `sudo apt-get install vim`
 
-# Servers, Databases, VM
+# DK, Servers, Databases, Platforms
 
 ## Node
 
@@ -112,21 +119,21 @@ sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
 sudo apt-get install nodejs
 ```
+
 [[How to install]](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#ubuntu-mint-elementary-os)
 
 ## Java
 
-## Install Java 7
+### Install Java 7
 
 ```
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java7-installer
+sudo apt-get install oracle-java7-set-default
 ```
 
-sudo apt-get install oracle-java7-set-default
-
-## Insall Java 8
+### Insall Java 8
 
 Type in terminal:
 
@@ -147,23 +154,23 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.0-b70, mixed mode)
 remove Java 8:
 
 ```
-sudo dpkg --list | grep -i jdk // check installed packages
+sudo dpkg --list | grep -i jdk # check installed packages
 sudo apt-get remove oracle-java8-installer
-sudo dpkg --list | grep -i jdk // check installed packages again
-java -version // for sure
+sudo dpkg --list | grep -i jdk # check installed packages again
+java -version # for sure
 ```
 
 ## JBoss 7 as
 
-on eclipce will be needed 'JBossAS Tool'
-
-[[DW]](http://jbossas.jboss.org/downloads)
+on eclipce will be needed 'JBossAS Tool' [<core-icon icon="file-download"></core-icon>](http://jbossas.jboss.org/downloads)
 
 ## mySQL
 
 sudo apt-get install mysql-server
 
 ## MongoDB
+
+[[How to install]](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/)
 
 Usage:
 
@@ -175,12 +182,9 @@ Setup port:
 /etc/mongod.conf
 port = 27000
 
-[[How to install]](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/)
-
 ## Elastic Search
 
-install elastic search
-https://gist.github.com/wingdspur/2026107
+[[How to install]](https://gist.github.com/wingdspur/2026107)
 
 sudo /etc/init.d/elasticsearch start
 
@@ -190,34 +194,30 @@ sudo /etc/init.d/elasticsearch start
 
 * Tweak Tool - Top Bar -> Show Data -> switch ON
 * Tweak Tool - Windows -> Minimize -> switch ON
-* add new file menu in ubuntu gnome 
- 
+* never group programs on alt + tab - open tweaktool -> Extentions -> Alternatetab ON
+* add new file menu in ubuntu gnome [<core-icon icon="link"></core-icon>](http://askubuntu.com/questions/309834/missing-new-file-in-ubuntu-13-04)
+
 ```
 cd ~/Templates
 touch Text.txt
 ```
 
-[[Link]](http://askubuntu.com/questions/309834/missing-new-file-in-ubuntu-13-04)
-
 ## Ubuntu
 
-*  turn of search online in dash - system setings -> security and privacy -> search tab -> turn off 
+* turn of search online in dash - system setings -> security and privacy -> search tab -> turn off 
 * Enable minimize on click in Ubuntu 14.04:
-	- sudo apt-get install compizconfig-settings-manager
-	- open "CompizConfig Settings Manager" drom dash
-	- click "ubuntu utility plugin" icon
-	- go to luncher tab
-	- click ckeckbox "Minimize Single Window Applications."
+    - sudo apt-get install compizconfig-settings-manager
+    - open "CompizConfig Settings Manager" drom dash
+    - click "ubuntu utility plugin" icon
+    - go to luncher tab
+    - click ckeckbox "Minimize Single Window Applications."
 
 ## Ubuntu and Ubuntu Gnome keys
 
 * Go to Settings -> Keyboard -> Shortcuts tab:
-	- Laungers -> Home folder -> change to Super + E
-	- System -> Lock screen -> change to Super + L
+    - Laungers -> Home folder -> change to Super + E
+    - System -> Lock screen -> change to Super + L
 
-## Ubuntu Gnome 
-
-* never group programs on alt + tab - open tweaktool -> Extentions -> Alternatetab ON
 
 ## Lubuntu 
 
