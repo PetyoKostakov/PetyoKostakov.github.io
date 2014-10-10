@@ -14,3 +14,5 @@ layout: default
 # Undefined
 
 * *shim* - a washer or thin strip of material used to align parts, make them fit, or reduce wear. In other words something that fill the gab. See polyfill or polyfiller on this page.
+
+* *scafold, scafolding* - A temporary platform on which workers sit or stand when performing tasks at heights above the ground.
