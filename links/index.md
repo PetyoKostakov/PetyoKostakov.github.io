@@ -7,8 +7,13 @@ layout: default
 
 <hr>
 
-За следене:
-[[HTML5 Rocks]](http://www.html5rocks.com/)  <a href="http://www.html5rocks.com/">HTML5 Rocks</a> - спонсориран от google с около 50 блогъри от уеб индустрията и обилни, много добре написани статии
+## За следене:
+
+[HTML5 Rocks](http://www.html5rocks.com/)  <a href="http://www.html5rocks.com/">HTML5 Rocks</a> - спонсориран от google с около 50 блогъри от уеб индустрията и обилни, много добре написани статии
+
+[htmlxprs](http://www.htmlxprs.com/)
+
+[scotch.io](http://scotch.io/)
 
 
 
