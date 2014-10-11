@@ -7,6 +7,7 @@ layout: post
 [[webcomponents.org]](http://webcomponents.org/)
 [[polymer-project.org]](https://www.polymer-project.org/)
 [[polymer designer]](https://www.polymer-project.org/tools/designer/)
+[[polymer themes]](https://polymerthemes.com/)
 [[build web components]](https://github.com/PolymerLabs/seed-element)
 [[find and share components]](http://customelements.io/)
 [[icons catalog]](http://www.polymer-project.org/components/core-icon/demo.html)
