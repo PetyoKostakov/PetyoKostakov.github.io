@@ -53,6 +53,8 @@ Git:
 
 # Web
 
+* [caniuse](http://caniuse.com/)
+
 ## JavaScript
 
 * [JavaScript Memory Management Masterclass by Andy Osmani](https://speakerdeck.com/addyosmani/javascript-memory-management-masterclass)
