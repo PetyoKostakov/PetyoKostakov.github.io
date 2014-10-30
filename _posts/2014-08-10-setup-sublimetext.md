@@ -53,6 +53,10 @@ You can lint your files with <code>ctrl + shift + J</code>Also you can set to ch
 
 [[LINK]](https://github.com/victorporof/Sublime-JSHint)
 
+### ColorHighlighter
+
+[[LINK]](https://github.com/Monnoroch/ColorHighlighter)
+
 ### AutoFileName
 
 [[Link]](https://github.com/BoundInCode/AutoFileName)
