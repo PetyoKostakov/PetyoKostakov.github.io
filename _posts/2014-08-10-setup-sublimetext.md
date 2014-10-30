@@ -53,6 +53,10 @@ You can lint your files with <code>ctrl + shift + J</code>Also you can set to ch
 
 [[LINK]](https://github.com/victorporof/Sublime-JSHint)
 
+### AutoFileName
+
+[[Link]](https://github.com/BoundInCode/AutoFileName)
+
 <h3>SublimeCodeIntel</h3>
 <p>(CodeInteligence)autocomplete and go to definitions</p>
 <a href="https://github.com/SublimeCodeIntel/SublimeCodeIntel"><span class="link-tab">[LINK]</span></a>
