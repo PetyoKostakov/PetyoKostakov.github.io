@@ -55,6 +55,8 @@ You can lint your files with <code>ctrl + shift + J</code>Also you can set to ch
 
 ### ColorHighlighter
 
+open color picker -> move coursor on the color and press `ctrl + shift + c`
+
 [[LINK]](https://github.com/Monnoroch/ColorHighlighter)
 
 ### AutoFileName
