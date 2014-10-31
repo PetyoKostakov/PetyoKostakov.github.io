@@ -94,6 +94,16 @@ Markdown GMF Settings
 }
 ```
 
+## Seti UI - Color theme
+
+Add this config to Settings - User	
+
+``` javascript
+	"theme": "Seti.sublime-theme",
+	"caret_extra_width": 2,
+	"color_scheme": "Packages/User/Seti (SL).tmTheme",
+```
+
 # Settings
 
 ## Default global settings
