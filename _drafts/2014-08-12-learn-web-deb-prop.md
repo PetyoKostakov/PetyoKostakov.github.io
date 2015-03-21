@@ -1,5 +1,5 @@
 ---
-title: Setup SublimeText3 for web developing
+title: How to learn web developing properly
 author: Petyo Kostakov
 layout: post
 ---

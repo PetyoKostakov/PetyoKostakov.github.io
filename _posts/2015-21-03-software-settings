@@ -1,0 +1,19 @@
+---
+title: Everyday software settings
+author: Petyo Kostakov
+layout: post
+---
+
+# MS Outlook
+
+## Run Outlook on windows start
+
+ - Click StartButton image > All Programs > Microsoft Office.
+ - Right-click the icon of the program you want to start automatically, and then  - click Copy (or press Ctrl + C).
+ - In the All Programs list, right-click the Startup folder, and then click Explore.
+ - Click Organize > Paste (or press Ctrl+V) to paste the program shortcut into the Startup folder.
+
+## Keep Outlook minimized
+
+ - Click on the Outlook icon in the system tray with the right mouse button.
+ - Select Hide When Minimized from the menu.

@@ -20,7 +20,7 @@ Ask them about their opinions about what is on the horizon (HTML 5, IE 8, Chrome
 
 does the candidate have JavaScript errors? if they do, does the person let them bubble up to the presentation layer or do they at least catch them with a try/catch block?
 
-. Being able to properly break down a design into its semantic components, identifying sections and separating primary and secondary content from navigation is not math or science and therefore hard to test. 
+. Being able to properly break down a design into its semantic components, identifying sections and separating primary and secondary content from navigation is not math or science and therefore hard to test.
 
 We were asked a couple of questions about DOM, Object-Orientation, Closures, XML Namespaces and general Web Design
 
@@ -49,3 +49,15 @@ http://www.ex-designz.net/test_page.asp?tid=65
 http://withoutbook.com/OnlineTestStart.php?quizId=12
 
 ## Test CSS
+
+
+
+## How "this" keyword works in JavaScript?
+
+[[Explained]](https://github.com/darcyclarke/Front-end-Developer-Interview-Questions)
+
+## Explain event delegation
+
+In short event delegation is mechanism list for event of parent rather to every single child
+
+[[LINK]](http://davidwalsh.name/event-delegate)
