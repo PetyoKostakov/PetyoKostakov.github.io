@@ -1,0 +1,15 @@
+setting up - http://imstillreallybored.com/2013/08/setting-up-a-require-js-and-backbone-js-project-quickly-with-bower/
+setting text.js for templates - http://stackoverflow.com/questions/16514254/requirejs-text-plugin-installed-with-bower
+backbone - Organizing your application using Modules (require.js) - http://backbonetutorials.com/organizing-backbone-using-modules/
+TODO MVC - https://github.com/tastejs/todomvc/blob/gh-pages/examples/backbone/index.html
+
+
+intro to backbone 1 - http://adrianmejia.com/blog/2012/09/11/backbone-dot-js-for-absolute-beginners-getting-started/
+intro to backbone 2 - http://adrianmejia.com/blog/2012/09/13/backbone-js-for-absolute-beginners-getting-started-part-2/
+
+
+<link rel="stylesheet" href="aui/css/aui.min.css" media="all">
+<link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all">
+<script src="aui/js/aui.min.js"></script>
+<script src="aui/js/aui-experimental.min.js"></script>
+<script src="aui/js/aui-soy.min.js"></script>
