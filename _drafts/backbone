@@ -8,8 +8,15 @@ intro to backbone 1 - http://adrianmejia.com/blog/2012/09/11/backbone-dot-js-for
 intro to backbone 2 - http://adrianmejia.com/blog/2012/09/13/backbone-js-for-absolute-beginners-getting-started-part-2/
 
 
+
+
+
+
 <link rel="stylesheet" href="aui/css/aui.min.css" media="all">
 <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all">
 <script src="aui/js/aui.min.js"></script>
 <script src="aui/js/aui-experimental.min.js"></script>
 <script src="aui/js/aui-soy.min.js"></script>
+
+
+npm install globby, gulp
