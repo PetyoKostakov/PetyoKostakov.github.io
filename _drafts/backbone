@@ -15,8 +15,310 @@ intro to backbone 2 - http://adrianmejia.com/blog/2012/09/13/backbone-js-for-abs
 <link rel="stylesheet" href="aui/css/aui.min.css" media="all">
 <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all">
 <script src="aui/js/aui.min.js"></script>
-<script src="aui/js/aui-experimental.min.js"></script>
+o <script src="aui/js/aui-experimental.min.js"></script>
 <script src="aui/js/aui-soy.min.js"></script>
 
 
 npm install globby, gulp
+
+
+
+MODEL ======================================================
+
+var Person = Backbone.Model.extend({
+    urlRoot: '/books',
+    idAttribute: '_id', // the id prop on the sever may be diferent and this way can be changed
+    // create: POST /books
+    // read: GET /books/:id
+    // update: PUT /books/:id
+    // destroy: DELETE /books/:id
+    initialize: function(attr, opt) {
+        console.log('hello world');
+        this.bind("change:name", function() {
+            console.log(this.get('name') + " is now the value for name");
+        });
+        this.bind('invalid', function( model, error ) {
+            console.error(error);
+        });
+    },
+    defaults: { // assign when model is created
+        name: "Bob Hope",
+        height: "unknown"
+    },
+    validate: function ( attributes, opts ) {
+        if( attributes.name == 'Joe' ) {
+            return "Uh oh, you're name is Joe!";
+        }
+    }
+});
+
+var person = new Person();
+person.set(height:"6 feet"}, {validate:true});
+person.values(); // all props and their values
+person.keys(); all props names[]
+person.isValid(); //
+
+person.isNew(); // if has representation on the server
+person.save(); // persist on the server
+
+var person1 = new Person({ id: 1});
+person1.fetch().then(function() {}); // read: GET /books/:id from the server
+person1.destroy(); // destroy: DELETE /books/:id
+
+
+console.log(person.toJSON());
+
+var ModelChild = Person.extend({
+  initialize: function(attr, opt) {
+    ModelChild.__super__.initialize.apply(this, arguments);
+    console.log('created instance of ModelChild');
+  },
+  defaults: function () { // execute time every time it's getted
+    return {
+      time: new Date()
+    }
+  }
+});
+
+COLECTION =============================================================
+
+var Person = Backbone.Model.extend({
+    initialize: function() {
+        console.log('Person is initialized.');
+    },
+    defaults: {
+        name: 'undefined',
+        age: 'undefined'
+    }
+});
+
+var People = Backbone.Collection.extend({
+
+    initialize: function() {
+        console.log("People Collection is initialized");
+    },
+    url: '/books'
+    model: Person
+});
+
+var person = new Person({name:"Joe"});
+var people = new People(person);
+console.log(people.toJSON());
+
+people.add([{name:"Bob"}, {name:"Jim"}, new People({})]);
+people.remove(person)
+people.push()
+people.reset() //clear collection
+people.pop();
+people.slice(1,2);
+peoples2 = people.clone
+people.shift(); // pop first el
+people.length
+people.models // []
+
+// METHODS
+peop;e.get(3)
+people.where( author: "somoube"); all mathes
+people.findWhere({}) // first match
+
+// ALL UNDERSCORE METHODS - assume that collection is array
+people.filter();
+
+// SORING
+people.comparator = "title" // collection will be sorted by title attr
+people.sort()
+
+people.comparator = function (model) { return model.get('author'); };
+people.comparator = function (model1, model2) { return model1.get('author').length - model1.get('author').length; };
+
+people.plug('name'); // return all person names[]
+
+//SERVER
+people.create({}) // add and persist
+people.fetch();
+
+//EVENTS - add, remove, reset, sort, request, sync, error http://backbonejs.org/#Events-catalog
+ people.on('add', function(person) {});
+
+ people.on('remove', function(person) {
+   person.view.remove();
+ });
+
+
+VIEW =============================================================
+
+var BookView = Backbone.View.extend({
+  el: '', // element insted of root element
+  tagname: 'li',
+  templage: _.template(''),
+  render: function() {
+    this.el.innerHTML = this.template(this.model.toJSON());
+    return this;
+  },
+  events: {
+    'click .remove': 'removeModel',
+    'click .nav': 'hancleClick'
+  },
+  removeModel: function (evt) {
+    //this.model.collection.remove(this.model);
+    this.model.destroy();
+  },
+  hancleClick: function (evt) {
+    Backbone.history.navigate(evt.target.getAttribute('href'), { trigger: true });
+    evt.preventDefault()
+  }
+
+
+
+  /* tagName: 'li' // root element
+  className: 'book book-sor'
+  attributes: function() {
+    return {
+      'data-client-id': this.model.cid
+    }
+  } */
+});
+
+var BooksView = Backbone.View.extend({
+  initialize: function () {
+    this.listenTo(this.collection, 'remove', this.removeModel);
+    this.listenTo(this.collection, 'add', this.addModel);
+
+    this.listenTo(this.collection, 'remove', this.updateNumber);
+    this.listenTo(this.collection, 'add', this.updateNumber);
+  },
+  template: _.template('<h1>Books list (<%= length %>)</h1><ul></ul><p><button class="remove">Remove</button></p>'),
+  render: function () {
+    this.el.innerHTML = this.template(this.collection);
+    var ul = this.$('ul');
+
+    this.collection.each( function (model) {
+        model.view = new BookView({ model: model })
+        ul.append(model.view.render().el)
+    });
+
+    return this;
+  },
+  addModel: function (model) {
+    model.view = new BookView({ model: model })
+    this.$('ul').append(model.view.render().el)
+  },
+  removeModel: function (model) {
+    model.view.remove();
+  },
+  updateNumber: function (model) {
+
+  }
+});
+
+var AddBookView = Backbone.View.extend({
+  template: _.template('<p>Title: <input id="title" /></p><p>Author: <input id="author" /></p><p><button class="add"> Add New Book</button></p>');
+  events: {
+    'click .add': 'addBook'
+  },
+  renderer: function () {
+    this.el.innerHTML = this.template();
+  },
+  addBook: function () {
+    this.collection.create({
+      title: this.$('#title').val(),
+      author: this.$('#author').val()
+    })
+
+    Backbone.history.navigate('', { trigger: true });
+  }
+})
+
+var books = new Books();
+books.fetch().then( function () {
+  var addBookView = new AddBookView({ collection: books });
+  var booksView = new BooksView({ model: books.at(0) });
+  $("#main")
+    .append(booksView.render().el).
+    .append(addBookView.render().el);
+})
+<p>Title: <input id="title" /></p><p>Author: <input id="author" /></p><p><button class="add"> Add New Book</button></p>
+
+===================
+var model = new Backbone.Model({
+    data:[
+        { text: "Google", href: "http://google.com" },
+        { text: "Facebook", href: "http://facebook.com" },
+        { text: "Youtube", href: "http://youtube.com" }
+    ]
+});
+
+var View = Backbone.View.extend({
+    initialize: function () {
+        this.template = $('#list-template').children();
+    },
+    el: '#container',
+    events: {
+        "click button": "render"
+    },
+    render: function() {
+        var data = this.model.get('data');
+
+        for (var i=0, l=data.length; i<l; i++) {
+            var li = this.template.clone().find('a').attr('href', data[i].href).text(data[i].text).end();
+            this.$el.find('ul').append(li);
+        }
+    }
+});
+
+ROUTERS ======================================================
+
+var BookRouter = Backbone.Router.extend({
+  initialize: function (opts) {
+    this.books = opts.books;
+  },
+  routes: {
+    '': 'list',
+    'add': 'add' //'add/:id': 'add'
+  },
+  list: function () {
+    console.log('viewing the root');
+    var booksView = new BooksView({ model: this.books.at(0) });
+    $("#main").append(booksView.render().el);
+
+  },
+  add: function (id) {
+    var addBookView = new AddBookView({ collection: this.books });
+    var booksView = new BooksView({ model: books.at(0) });
+    $("#main")
+      .append(booksView.render().el).
+      .append(addBookView.render().el);
+  }
+});
+
+var books = new Books();
+var router = new BookRouter({ books: books });
+books.fetch().then( function () {
+  Backbone.history.start({ pushState: true });
+
+})
+
+EVENTS =============================================================
+
+obj.on(event, fn, context) //older
+obj.once(event, fn, context)
+obj.off(event, fn, context)
+
+obj.trigger(event)
+
+events on all abjts
+view.listenTo(obj, event, fn);
+view.listenToOnce(obj, event, fn);
+view.stopListening(obj, event, fn);
+
+// events on model
+change
+change:field
+destroy
+request // requset to server
+sync // obj is persisted
+error // obj is FAILD persisted
+invalid
+all
+
+person.on('change:name', function() {})
