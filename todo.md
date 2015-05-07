@@ -1,5 +1,6 @@
 # TODO
 
+* create an article for data structures with example of rooms and make javascript implementation
 * finish setup ubuntu and sublime text
 * Create another header
 * create about page which contains:
