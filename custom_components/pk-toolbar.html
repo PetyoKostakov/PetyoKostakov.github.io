@@ -1,0 +1,30 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="pk-toolbar">
+    <style type="text/css">
+        :host { /*host is selector for pk-example tag*/
+            position: relative;
+            color: red;
+        }
+    </style>
+    <template>
+        <h1>I'm a <span>{{userName}}</span>. This is my local DOM!</h1>
+    </template>
+    <script>
+        // register a new element called pk-toolbar
+        Polymer({
+            is: "pk-toolbar",
+            // add a callback to the element's prototype
+            properties: {
+                userName: {
+                    value: "Moshio",
+                    type: String,
+                    notify: true
+                }
+            },
+            ready: function() {
+                //this.innerHTML = "<h1>I'm a proto-element. Check out my prototype!</h1>"
+            }
+        });
+    </script>
+</dom-module>

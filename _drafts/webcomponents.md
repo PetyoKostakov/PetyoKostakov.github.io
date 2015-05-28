@@ -57,7 +57,7 @@ layout: post
   </div>
   <content></content><!-- insert nodes that haven't been selected -->
 </template>
-<script>
+	<script>
   Polymer({
     owner: "Daniel",
     age: 25,
