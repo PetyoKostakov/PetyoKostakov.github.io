@@ -1,0 +1,59 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="bs-navbar" class="flearfix">
+
+    <template>
+        <!-- scoped CSS for this element -->
+        <style>
+            :host {
+                display: block;
+                padding: 0 1rem;
+
+                background-color: #f8f8f8;
+                border-color: #e7e7e7;
+            }
+            :host ::content a {
+                color: #777;
+                text-decoration: none;
+
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                line-height: 20px;
+
+                position: relative;
+                display: block;
+                padding: 10px 15px;
+
+                float: left;
+            }
+            :host ::content a:hover {
+                color: #333;
+            }
+
+        </style>
+        <!-- any children are rendered here -->
+        <!--<ul class="nav navbar-nav">
+            <li class="active"><a href="#">Page 1-1</a></li>
+        </ul>-->
+        <content></content>
+        <!--<div class="clearfix">
+            <div class="left">
+                <content select=".left"></content>
+            </div>
+            <div class="right">
+                <content select=".right"></content>
+            </div>
+        </div>-->
+    </template>
+
+    <script>
+        Polymer({
+            is: "bs-navbar",
+            ready: function () {
+                // set this element's owner property
+                //this.owner = "Daniel";
+            }
+        });
+    </script>
+
+</dom-module>
