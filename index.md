@@ -15,7 +15,6 @@ layout: default
   <div class="cta-buttons">
     <a href="/cv" class="btn btn-primary">View My CV</a>
     <a href="/courses" class="btn btn-secondary">My Courses</a>
-    <a href="/blog" class="btn btn-secondary">Read My Blog</a>
   </div>
 </div>
 
