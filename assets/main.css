@@ -390,6 +390,107 @@ img {
   }
 }
 
+/* ==================== LEARNING ==================== */
+
+.learning-year {
+  margin-bottom: 2.5rem;
+}
+
+.learning-year__heading {
+  font-size: 1.25rem;
+  color: var(--light-text);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.learning-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.learning-item {
+  border-left: 3px solid var(--border-color);
+  padding: 0 0 0 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.learning-item:hover {
+  border-left-color: var(--primary-color);
+}
+
+.learning-item__head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.learning-item__date {
+  color: var(--light-text);
+  font-size: 0.85rem;
+}
+
+.learning-item__title {
+  margin: 0 0 0.25rem;
+  font-size: 1.15rem;
+}
+
+.learning-item__org {
+  margin: 0 0 0.5rem;
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+
+.learning-item__desc {
+  margin: 0.5rem 0;
+}
+
+.learning-item__credential {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.learning-badge {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+.learning-badge--conference {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+.learning-badge--certification {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.learning-badge--workshop {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.learning-badge--training {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+}
+
+@media (max-width: 768px) {
+  .learning-item__head {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
 /* ==================== TABLES ==================== */
 
 table {

@@ -1,6 +1,6 @@
 # Petyo Kostakov - Professional Portfolio
 
-A professional Jekyll-based portfolio website showcasing CV, courses, and blog posts.
+A professional Jekyll-based portfolio website showcasing CV, learning and blog posts.
 
 ## 🚀 Quick Start
 
@@ -36,11 +36,11 @@ All documentation files are in the `docs/` folder:
 ├── index.md              # Homepage
 ├── cv.md                 # CV page
 ├── blog.md               # Blog listing
-├── courses.md            # Courses page
+├── learning.md           # Learning listing
 ├── about.md              # About page
 ├── 404.md                # Error page
 ├── _posts/               # Blog posts
-├── _courses/             # Courses
+├── _learning/            # Learning entries
 ├── _layouts/             # Templates
 ├── _includes/            # Components
 ├── assets/               # CSS and styles
@@ -56,7 +56,7 @@ All documentation files are in the `docs/` folder:
 ✅ Professional design  
 ✅ Responsive layout  
 ✅ Blog system with categories/tags  
-✅ Course management  
+✅ Learning log (courses, workshops, training, conferences)  
 ✅ CV showcase  
 ✅ SEO optimized  
 ✅ Social media integration  
@@ -69,7 +69,7 @@ All documentation files are in the `docs/` folder:
 - **index.md** - Homepage with featured content
 - **cv.md** - Professional CV/Resume
 - **blog.md** - Blog post listing
-- **courses.md** - Course listings
+- **learning.md** - Courses, workshops, training and conferences attended
 - **about.md** - Personal bio and expertise
 - **404.md** - Custom error page
 
@@ -83,10 +83,10 @@ All documentation files are in the `docs/` folder:
 # Example: _posts/2024-09-15-my-first-post.md
 ```
 
-### Course
+### Learning Entry
 ```bash
-# Create file: _courses/course-name.md
-# Example: _courses/python-basics.md
+# Create file: _learning/descriptive-name.md
+# Example: _learning/2026-kubecon-eu.md
 ```
 
 See [SETUP_GUIDE.md](docs/SETUP_GUIDE.md) for detailed examples.

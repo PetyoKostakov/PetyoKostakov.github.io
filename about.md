@@ -22,7 +22,7 @@ I specialize in:
 - **Full-Stack Web Development** - Building scalable web applications from frontend to backend
 - **Cloud & DevOps** - Designing and implementing cloud infrastructure on AWS and other platforms
 - **Software Architecture** - Creating maintainable and efficient system designs
-- **Technical Education** - Sharing knowledge through courses and blog posts
+- **Technical Education** - Sharing knowledge through writing and mentoring
 
 ## My Passion
 
@@ -37,7 +37,7 @@ I'm deeply passionate about:
 This portfolio showcases:
 - **CV** - My professional experience and skills
 - **Blog** - Technical articles, tutorials, and insights on software development
-- **Courses** - Educational content I've created to help others learn
+- **Learning** - Courses, workshops, training and conferences I've attended
 
 ## Let's Connect
 

@@ -13,8 +13,8 @@ layout: default
   <p>{{ site.description }}</p>
   
   <div class="cta-buttons">
-    <a href="/cv" class="btn btn-primary">View My CV</a>
-    <a href="/courses" class="btn btn-secondary">My Courses</a>
+    <a href="{{ '/cv' | relative_url }}" class="btn btn-primary">View My CV</a>
+    <a href="{{ '/learning' | relative_url }}" class="btn btn-secondary">My Learning</a>
   </div>
 </div>
 
@@ -23,8 +23,8 @@ layout: default
     <h2>About Me</h2>
     <p>
       I'm a passionate software developer and technology enthusiast with expertise in 
-      full-stack development, cloud infrastructure, and DevOps. I enjoy sharing knowledge 
-      through courses and technical writing.
+      full-stack development, cloud infrastructure, and DevOps. I'm committed to
+      continuous learning and sharing what I pick up along the way.
     </p>
   </section>
 
@@ -53,19 +53,35 @@ layout: default
     {% endif %}
   </section>
 
-  <section class="section-featured-courses">
-    <h2>Featured Courses</h2>
-    {% if site.courses.size > 0 %}
-    <ul class="course-list">
-      {% for course in site.courses limit:3 %}
+  <section class="section-recent-learning">
+    <h2>Recent Learning</h2>
+    {% assign recent_learning = site.learning | sort: "date" | reverse %}
+    {% if recent_learning.size > 0 %}
+    <ul class="post-list">
+      {% for item in recent_learning limit:3 %}
       <li>
-        <h3><a href="{{ course.url | relative_url }}">{{ course.title }}</a></h3>
-        <p>{{ course.description }}</p>
+        <span class="post-meta">{{ item.date | date: "%b %Y" }}</span>
+        <h3>
+          {% if item.content != blank %}
+            <a class="post-link" href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
+          {% else %}
+            {{ item.title | escape }}
+          {% endif %}
+        </h3>
+        {% if item.organization %}
+        <p>{{ item.organization }}</p>
+        {% endif %}
       </li>
       {% endfor %}
     </ul>
+
+    {% if recent_learning.size > 3 %}
+    <p class="rss-subscribe">
+      <a href="{{ '/learning' | relative_url }}">View all learning &rarr;</a>
+    </p>
+    {% endif %}
     {% else %}
-    <p>No courses published yet. Check back soon!</p>
+    <p>Nothing published here yet &mdash; check back soon.</p>
     {% endif %}
   </section>
 </div>

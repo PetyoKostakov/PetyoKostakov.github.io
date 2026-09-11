@@ -78,11 +78,11 @@ else
     echo "   ⚠️  _posts/ directory not found"
 fi
 
-if [ -d "_courses" ]; then
-    COURSE_COUNT=$(find _courses -name "*.md" 2>/dev/null | wc -l)
-    echo "   ✅ _courses/ directory found ($COURSE_COUNT courses)"
+if [ -d "_learning" ]; then
+    LEARNING_COUNT=$(find _learning -name "*.md" 2>/dev/null | wc -l)
+    echo "   ✅ _learning/ directory found ($LEARNING_COUNT entries)"
 else
-    echo "   ⚠️  _courses/ directory not found"
+    echo "   ⚠️  _learning/ directory not found"
 fi
 echo ""
 

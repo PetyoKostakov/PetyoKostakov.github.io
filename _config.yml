@@ -5,8 +5,8 @@ tagline: Senior Software Development Manager
 author: Petyo Kostakov
 email: petyokostakov@gmail.com
 description: >-
-  Professional portfolio showcasing CV, courses, and blog posts on software development,
-  technology, and professional growth.
+  Professional portfolio showcasing CV, learning and professional growth in
+  software development and technology.
 baseurl: ""
 url: "https://petyokostakov.github.io"
 image: /assets/PetyoKostakovProfile.jpg
@@ -23,9 +23,9 @@ plugins:
 
 # Collections for better organization
 collections:
-  courses:
+  learning:
     output: true
-    permalink: /courses/:path/
+    permalink: /learning/:path/
 
 # Exclude from processing
 exclude:
