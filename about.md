@@ -6,6 +6,13 @@ permalink: /about/
 
 # About Me
 
+<img
+  class="profile-photo"
+  src="{{ '/assets/PetyoKostakovProfile.jpg' | relative_url }}"
+  alt="{{ site.title | escape }}"
+  width="180"
+  height="180">
+
 Welcome to my professional portfolio! I'm a passionate software developer with expertise in 
 full-stack development, cloud infrastructure, and DevOps practices.
 

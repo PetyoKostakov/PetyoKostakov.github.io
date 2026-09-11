@@ -363,6 +363,33 @@ img {
   margin: 1.5rem 0;
 }
 
+/* Profile photo (shared by homepage hero and About page) */
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto 1.5rem;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.profile-photo--hero {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .profile-photo,
+  .profile-photo--hero {
+    width: 140px;
+    height: 140px;
+  }
+}
+
 /* ==================== TABLES ==================== */
 
 table {

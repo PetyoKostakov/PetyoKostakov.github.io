@@ -3,6 +3,12 @@ layout: default
 ---
 
 <div class="home-hero">
+  <img
+    class="profile-photo profile-photo--hero"
+    src="{{ '/assets/PetyoKostakovProfile.jpg' | relative_url }}"
+    alt="{{ site.title | escape }}"
+    width="200"
+    height="200">
   <h1>Welcome to My Professional Portfolio</h1>
   <p>{{ site.description }}</p>
   
