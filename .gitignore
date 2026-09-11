@@ -1,6 +1,17 @@
 node_modules/
 .DS_Store
+
+# IntelliJ IDEA
 .idea/
+*.iml
+*.iws
+*.ipr
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/misc.xml
+.idea/vcs.xml
+
+# ...existing code...
 Gemfile.lock
 _site/
 .jekyll-cache/
