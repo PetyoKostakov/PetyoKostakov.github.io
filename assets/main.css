@@ -542,13 +542,16 @@ table tr:last-child td {
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: white;
+  color: #fff;
   border-color: var(--primary-color);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: #1e5fa3;
   border-color: #1e5fa3;
+  color: #fff;
+  text-decoration: none;
   box-shadow: 0 2px 8px rgba(42, 122, 226, 0.3);
 }
 
@@ -558,9 +561,12 @@ table tr:last-child td {
   border-color: var(--border-color);
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:focus {
   background-color: #d0d0d0;
   border-color: #d0d0d0;
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .btn-outline {
@@ -569,9 +575,11 @@ table tr:last-child td {
   border-color: var(--primary-color);
 }
 
-.btn-outline:hover {
+.btn-outline:hover,
+.btn-outline:focus {
   background-color: var(--primary-color);
-  color: white;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* ==================== FORMS ==================== */

@@ -116,11 +116,14 @@ layout: default
 
 .btn-primary {
   background-color: #2a7ae2;
-  color: white;
+  color: #fff;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: #1e5fa3;
+  color: #fff;
+  text-decoration: none;
 }
 
 .btn-secondary {
@@ -128,8 +131,11 @@ layout: default
   color: #333;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:focus {
   background-color: #d0d0d0;
+  color: #333;
+  text-decoration: none;
 }
 
 .home-sections {
