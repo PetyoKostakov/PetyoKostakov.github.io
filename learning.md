@@ -31,6 +31,10 @@ how I keep my skills current.
         <h3 class="learning-item__title">
           {% if item.content != blank %}
             <a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
+          {% elsif item.course_url %}
+            <a href="{{ item.course_url }}"
+               target="_blank"
+               rel="noopener noreferrer">{{ item.title | escape }}</a>
           {% else %}
             {{ item.title | escape }}
           {% endif %}
@@ -42,15 +46,31 @@ how I keep my skills current.
         </p>
         {% endif %}
 
+        {% if item.instructor or item.duration %}
+        <p class="learning-item__meta">
+          {% if item.instructor %}{{ item.instructor }}{% endif %}
+          {%- if item.instructor and item.duration %} &middot; {% endif -%}
+          {% if item.duration %}{{ item.duration }}{% endif %}
+        </p>
+        {% endif %}
+
         {% if item.description %}
         <p class="learning-item__desc">{{ item.description }}</p>
         {% endif %}
 
-        {% if item.credential_url %}
-        <a class="learning-item__credential"
-           href="{{ item.credential_url }}"
-           target="_blank"
-           rel="noopener noreferrer">View credential &rarr;</a>
+        {% if item.credential_url or item.repo_url %}
+        <p class="learning-item__links">
+          {% if item.credential_url %}
+          <a href="{{ item.credential_url }}"
+             target="_blank"
+             rel="noopener noreferrer">View credential &rarr;</a>
+          {% endif %}
+          {% if item.repo_url %}
+          <a href="{{ item.repo_url }}"
+             target="_blank"
+             rel="noopener noreferrer">Course repo &rarr;</a>
+          {% endif %}
+        </p>
         {% endif %}
       </li>
       {% endfor %}
