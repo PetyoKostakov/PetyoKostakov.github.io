@@ -958,21 +958,47 @@ label {
 .page-cv h4 {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
   flex-wrap: wrap;
   gap: 0.15rem 1.5rem;
 }
 
 .page-cv h3 {
+  /* centred rather than baseline, so the logo lines up with the company name */
+  align-items: center;
   margin-top: 2rem;
   padding-bottom: 0.35rem;
   border-bottom: 1px solid var(--border-color);
 }
 
 .page-cv h4 {
+  align-items: baseline;
   margin-top: 1.25rem;
   margin-bottom: 0.35rem;
   color: var(--primary-color);
+}
+
+/* Logo + company name, grouped as a single flex item */
+.cv-org {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.cv-logo {
+  /* Constrain by height, not a square box: wide logos (SAP) would otherwise
+     letterbox inside a square and render at roughly half the optical size. */
+  height: 30px;
+  width: auto;
+  max-width: 104px;
+  flex-shrink: 0;
+  object-fit: contain;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  /* override the global img rule, which sets height:auto and a 1.5rem margin */
+  margin: 0;
+  display: block;
 }
 
 .cv-meta {
@@ -986,6 +1012,11 @@ label {
   /* Stack the dates under the title rather than cramming them */
   .cv-meta {
     flex-basis: 100%;
+  }
+
+  .cv-logo {
+    height: 25px;
+    max-width: 84px;
   }
 }
 
@@ -1061,6 +1092,16 @@ label {
   .cv-meta {
     font-size: 9pt;
     color: #333;
+  }
+
+  .cv-logo {
+    height: 20pt;
+    width: auto;
+    max-width: 70pt;
+    border: 1px solid #ccc;
+    /* some browsers drop images when "background graphics" is off */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   /* URL expansion is noise beside a CV heading */

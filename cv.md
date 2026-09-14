@@ -29,7 +29,7 @@ and growing engineers into senior roles.
 
 ## Experience
 
-### Flutter Entertainment — PokerStars <span class="cv-meta">Jul 2018 – Present · 8 yrs 3 mos</span>
+### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/flutter_international_logo.jpeg' | relative_url }}" alt="" height="30">Flutter Entertainment — PokerStars</span> <span class="cv-meta">Jul 2018 – Present · 8 yrs 3 mos</span>
 
 #### Senior Software Development Manager <span class="cv-meta">Jul 2024 – Present · 2 yrs 3 mos</span>
 
@@ -60,7 +60,7 @@ technology.
      largest gap in this CV. Cover: what the Agent Management platform did, its scale
      (users/markets/transactions), what you shipped, and how the team grew under you. -->
 
-### Effortel <span class="cv-meta">Apr 2017 – Jul 2018 · 1 yr 4 mos</span>
+### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/effortel_logo.jpeg' | relative_url }}" alt="" height="30">Effortel</span> <span class="cv-meta">Apr 2017 – Jul 2018 · 1 yr 4 mos</span>
 
 #### Web Development Team Lead
 
@@ -70,7 +70,7 @@ technology.
   network operators to manage business operations, billing, and network provisioning.
 - <!-- ADD: which operators or markets did this serve? -->
 
-### SAP <span class="cv-meta">Oct 2014 – Mar 2017 · 2 yrs 6 mos</span>
+### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/sap_logo.jpeg' | relative_url }}" alt="" height="30">SAP</span> <span class="cv-meta">Oct 2014 – Mar 2017 · 2 yrs 6 mos</span>
 
 #### Software Developer, Front-end / Scrum Master <span class="cv-meta">Jan 2016 – Mar 2017</span>
 
@@ -80,11 +80,7 @@ technology.
 
 - <!-- ADD: one line on scope and technologies -->
 
-### Cisco <span class="cv-meta">Jul 2013 – Oct 2014 · 1 yr 4 mos</span>
-
-<!-- VERIFY AGAINST LINKEDIN: the company header ends Sep 2014, but the Software Engineer
-     role below ends Oct 2014, and a Jul 2013 – Sep 2014 span does not total 1 yr 4 mos.
-     One of these three values is wrong — restored exactly as you originally had them. -->
+### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/cisco_logo.jpeg' | relative_url }}" alt="" height="30">Cisco</span> <span class="cv-meta">Jul 2013 – Oct 2014 · 1 yr 4 mos</span>
 
 #### Software Engineer <span class="cv-meta">Oct 2013 – Oct 2014</span>
 
