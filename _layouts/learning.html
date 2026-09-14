@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+<article class="learning-detail">
+
+  <header class="learning-detail__header">
+    <div class="learning-detail__head">
+      <span class="learning-badge learning-badge--{{ page.kind | default: 'course' | slugify }}">
+        {{ page.kind | default: "Course" }}
+      </span>
+      {% if page.date %}
+      <span class="learning-detail__date">
+        Completed {{ page.date | date: "%d %B %Y" }}
+      </span>
+      {% endif %}
+    </div>
+
+    <h1 class="learning-detail__title">{{ page.title | escape }}</h1>
+
+    {% if page.description %}
+    <p class="learning-detail__desc">{{ page.description }}</p>
+    {% endif %}
+
+    <dl class="learning-facts">
+      {% if page.organization %}
+      <div class="learning-facts__row">
+        <dt>Provider</dt>
+        <dd>{{ page.organization }}</dd>
+      </div>
+      {% endif %}
+
+      {% if page.instructor %}
+      <div class="learning-facts__row">
+        <dt>Instructor</dt>
+        <dd>{{ page.instructor }}</dd>
+      </div>
+      {% endif %}
+
+      {% if page.duration %}
+      <div class="learning-facts__row">
+        <dt>Length</dt>
+        <dd>{{ page.duration }}</dd>
+      </div>
+      {% endif %}
+
+      {% if page.location %}
+      <div class="learning-facts__row">
+        <dt>Location</dt>
+        <dd>{{ page.location }}</dd>
+      </div>
+      {% endif %}
+    </dl>
+
+    {% if page.course_url or page.credential_url or page.repo_url %}
+    <p class="learning-detail__links">
+      {% if page.course_url %}
+      <a class="btn btn-primary"
+         href="{{ page.course_url }}"
+         target="_blank"
+         rel="noopener noreferrer">Go to course &rarr;</a>
+      {% endif %}
+      {% if page.credential_url %}
+      <a class="btn btn-secondary"
+         href="{{ page.credential_url }}"
+         target="_blank"
+         rel="noopener noreferrer">View credential &rarr;</a>
+      {% endif %}
+      {% if page.repo_url %}
+      <a class="btn btn-secondary"
+         href="{{ page.repo_url }}"
+         target="_blank"
+         rel="noopener noreferrer">Course repo &rarr;</a>
+      {% endif %}
+    </p>
+    {% endif %}
+  </header>
+
+  <div class="learning-detail__content">
+    {{ content }}
+  </div>
+
+  <p class="learning-detail__back">
+    <a href="{{ '/learning' | relative_url }}">&larr; All learning</a>
+  </p>
+
+</article>
