@@ -25,24 +25,11 @@ and growing engineers into senior roles.
 
 **Domain** — Regulatory compliance (UKGC) · Player account management · iGaming
 
-## Technical Skills
-
-<!-- ACTION REQUIRED: replace with your actual stack — this section is what ATS keyword
-     filters scan first, and it is currently the biggest gap in your CV. -->
-
-**Languages** — JavaScript, TypeScript, …
-
-**Front-end** — Angular, RxJS, NgRx, …
-
-**Back-end** — …
-
-**Cloud & Infrastructure** — …
-
 **Tooling** — …
 
 ## Experience
 
-### Flutter Entertainment — PokerStars <span class="cv-meta">Jul 2018 – Present · 8 yrs 2 mos</span>
+### Flutter Entertainment — PokerStars <span class="cv-meta">Jul 2018 – Present · 8 yrs 3 mos</span>
 
 #### Senior Software Development Manager <span class="cv-meta">Jul 2024 – Present · 2 yrs 3 mos</span>
 
@@ -93,7 +80,7 @@ technology.
 
 - <!-- ADD: one line on scope and technologies -->
 
-### Cisco <span class="cv-meta">Jul 2013 – Sep 2014 · 1 yr 4 mos</span>
+### Cisco <span class="cv-meta">Jul 2013 – Oct 2014 · 1 yr 4 mos</span>
 
 <!-- VERIFY AGAINST LINKEDIN: the company header ends Sep 2014, but the Software Engineer
      role below ends Oct 2014, and a Jul 2013 – Sep 2014 span does not total 1 yr 4 mos.
