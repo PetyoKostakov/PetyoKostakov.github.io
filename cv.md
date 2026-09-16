@@ -25,7 +25,7 @@ and growing engineers into senior roles.
 
 **Domain** — Regulatory compliance (UKGC) · Player account management · iGaming
 
-**Tooling** — …
+**Technologies** — JavaScript, Java, AWS,  SQL, Kafka,  Angular, k8s,  Docker
 
 ## Experience
 
@@ -82,9 +82,9 @@ technology.
 
 ### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/cisco_logo.jpeg' | relative_url }}" alt="" height="30">Cisco</span> <span class="cv-meta">Jul 2013 – Oct 2014 · 1 yr 4 mos</span>
 
-#### Software Engineer <span class="cv-meta">Oct 2013 – Oct 2014</span>
 
-- <!-- ADD: what did you work on? -->
+
+#### Software Engineer <span class="cv-meta">Oct 2013 – Oct 2014</span>
 
 #### Associate Software Developer, Front-end <span class="cv-meta">Jul 2013 – Sep 2013</span>
 
