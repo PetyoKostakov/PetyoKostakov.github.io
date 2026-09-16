@@ -24,7 +24,9 @@
     {% seo title=false %}
   </head>
 
-  <body>
+  {%- assign body_class = page.permalink | default: '' | slugify -%}
+  {%- if body_class != '' -%}{%- assign body_class = body_class | prepend: 'page-' -%}{%- endif -%}
+  <body class="{{ body_class }}">
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
