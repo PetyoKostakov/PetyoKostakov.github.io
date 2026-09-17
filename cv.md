@@ -4,10 +4,46 @@ title: CV
 permalink: /cv/
 ---
 
-# Petyo Kostakov
-**Senior Software Development Manager**
+<header class="cv-header">
+  <img
+    class="cv-photo"
+    src="{{ '/assets/PetyoKostakovProfile.jpg' | relative_url }}"
+    alt="Petyo Kostakov"
+    width="150"
+    height="150">
 
-Sofia, Bulgaria · [petyokostakov@gmail.com](mailto:petyokostakov@gmail.com) · [LinkedIn](https://www.linkedin.com/in/petyokostakov/) · [GitHub](https://github.com/PetyoKostakov)
+  <div class="cv-identity">
+    <h1 class="cv-name">Petyo Kostakov</h1>
+    <p class="cv-role">Senior Software Development Manager</p>
+
+    <ul class="cv-contacts">
+      <li class="cv-contact">
+        <svg class="cv-contact__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+        </svg>
+        <span>Sofia, Bulgaria</span>
+      </li>
+      <li class="cv-contact">
+        <svg class="cv-contact__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        <a href="mailto:petyokostakov@gmail.com">petyokostakov@gmail.com</a>
+      </li>
+      <li class="cv-contact">
+        <svg class="cv-contact__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.469v6.766z"/>
+        </svg>
+        <a href="https://www.linkedin.com/in/petyokostakov/" target="_blank" rel="noopener noreferrer">linkedin.com/in/petyokostakov</a>
+      </li>
+      <li class="cv-contact">
+        <svg class="cv-contact__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        <a href="https://github.com/PetyoKostakov" target="_blank" rel="noopener noreferrer">github.com/PetyoKostakov</a>
+      </li>
+    </ul>
+  </div>
+</header>
 
 ## Professional Summary
 
@@ -33,30 +69,25 @@ and growing engineers into senior roles.
 
 #### Senior Software Development Manager <span class="cv-meta">Jul 2024 – Present · 2 yrs 3 mos</span>
 
-Managing two engineering teams (22 engineers total) across platform integration and regulatory
-technology.
+**Team: Partner Integrations** · Team size: 7
 
-**Partner Integrations** · Team of 7
+- **Owned delivery of microservices integrating third-party player account management (PAM) providers:** spanning user messaging/templating, session management, right of participation, and session timers—enabling PokerStars to be integrated into other company brands and extend liquidity across both PokerStars and partner brands, with services used across 20+ regulated markets.
+- **Led team transition into a new partner integrations domain with a scalable and flexible delivery framework:** Established a Figma-based framework that enabled strong planning, visibility, and adaptability—providing traceability for the whole team and proactive communication of timeline shifts to project management. Aligned Developers to tech-standard-driven breakdowns, QA to upfront test planning and risk identification, and Product to ticket ownership and closing the gap between architecture design and sprint inclusion.
+- **Consolidated three legacy teams into a unified PAM Operations Tools (OpTech) team:** Managed the merger of three teams with heavy legacy scope, driving knowledge transfer, CMDB documentation, and team autonomy across a complex product landscape.
 
-- Own delivery of microservices integrating third-party player account management providers,
-  enabling PokerStars to expand into new partner markets.
-- <!-- ADD: scale — how many integrations shipped? partners onboarded? -->
-- <!-- ADD: outcome — throughput, latency, or time-to-market improvement -->
+**Team: PAM OpTech** · Team size: 15
 
-**PAM OpTech** · Team of 15
-
-- Delivered UK Gambling Commission (UKGC) compliance workstreams, ensuring the player account
-  platform met regulatory requirements ahead of enforcement deadlines.
-- Led cloud transformation of legacy player account management services.
-- Built blacklist monitoring capability supporting responsible gambling and regulatory obligations.
-- Delivered CMP <!-- EXPAND: spell out this acronym — a hiring manager outside PokerStars
-  will not recognise it -->.
+- **Directed cross-functional "virtual teams" for high-stakes initiatives:** Assembled and led cross-team virtual squads to deliver the Blacklist monitoring and SOX compliance related to admin privilege auditing.
+- **Directed a company-wide AWS cloud transformation:** Oversaw migration of 10+ apps with 20+ services to AWS.
+- **Built operational excellence from the ground up:** Established an incident-management framework, PagerDuty on-call rotation, runbooks, and service guides, embedding a "shift-left" approach that surfaces monitoring, alerting, and risk needs during discovery and build.
+- **Drove Agile and Security maturity transformation across teams:** Led both engineering teams to Level 4 Agile maturity and achieved Level 3 Security CMM (SSDLC) compliance under revised assessment criteria, onboarding all applications with established vulnerability-management processes.
+- **Led end-to-end delivery of the Customer Management Platform (CMP):** integrating PokerStars with Salesforce via 6 microservices covering the full data lifecycle—import, retrieval, synchronization, and cleanup.
 
 #### Web Development Team Lead <span class="cv-meta">Jul 2018 – Jul 2024 · 6 yrs</span>
 
 **Agent Management** · Team of 6–8
 
-- <!-- ACTION REQUIRED: this is a six-year role currently carrying zero bullets — the single
+<!-- -  ACTION REQUIRED: this is a six-year role currently carrying zero bullets — the single
      largest gap in this CV. Cover: what the Agent Management platform did, its scale
      (users/markets/transactions), what you shipped, and how the team grew under you. -->
 
@@ -68,17 +99,18 @@ technology.
 
 - Led front-end development of Effortel EMS, an end-to-end platform enabling mobile virtual
   network operators to manage business operations, billing, and network provisioning.
-- <!-- ADD: which operators or markets did this serve? -->
+<!-- - ADD: which operators or markets did this serve? -->
 
 ### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/sap_logo.jpeg' | relative_url }}" alt="" height="30">SAP</span> <span class="cv-meta">Oct 2014 – Mar 2017 · 2 yrs 6 mos</span>
 
 #### Software Developer, Front-end / Scrum Master <span class="cv-meta">Jan 2016 – Mar 2017</span>
 
-- <!-- ADD: which product? what did you build? what did the Scrum Master role cover? -->
+
+<!-- -  ADD: which product? what did you build? what did the Scrum Master role cover? -->
 
 #### Associate Software Developer, Front-end <span class="cv-meta">Oct 2014 – Jan 2016</span>
 
-- <!-- ADD: one line on scope and technologies -->
+<!-- - ADD: one line on scope and technologies -->
 
 ### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/cisco_logo.jpeg' | relative_url }}" alt="" height="30">Cisco</span> <span class="cv-meta">Jul 2013 – Oct 2014 · 1 yr 4 mos</span>
 
