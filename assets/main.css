@@ -949,6 +949,112 @@ label {
 
 /* ==================== CV ==================== */
 
+/* Personal details: photo on the left, identity + contacts on the right */
+.cv-header {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin: 1rem 0 2.5rem;
+  padding: 1.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, var(--background-light) 0%, #fff 60%);
+}
+
+.cv-photo {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  /* override the global img rule (height:auto, 1.5rem margin) */
+  margin: 0;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.cv-identity {
+  min-width: 0;
+}
+
+.page-cv .cv-name {
+  margin: 0 0 0.2rem;
+  font-size: 2.25rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.cv-role {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.page-cv .cv-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-cv .cv-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--light-text);
+}
+
+.cv-contact__icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--primary-color);
+}
+
+.cv-contact a {
+  color: var(--light-text);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.cv-contact a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .cv-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .cv-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .page-cv .cv-name {
+    font-size: 1.75rem;
+  }
+
+  .page-cv .cv-contacts {
+    justify-content: center;
+    gap: 0.4rem 1rem;
+  }
+}
+
 .page-cv h1 {
   margin-bottom: 0.15rem;
 }
@@ -1070,6 +1176,54 @@ label {
   h1 {
     font-size: 19pt;
     margin: 0 0 0.2rem;
+  }
+
+  /* Flatten the header card: no fill, no rounding, tighter spacing */
+  .cv-header {
+    gap: 1rem;
+    margin: 0 0 0.9rem;
+    padding: 0 0 0.6rem;
+    border: none;
+    border-bottom: 1px solid #999;
+    border-radius: 0;
+    background: none;
+    break-inside: avoid;
+  }
+
+  .cv-photo {
+    width: 78pt;
+    height: 78pt;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page-cv .cv-name {
+    font-size: 19pt;
+  }
+
+  .cv-role {
+    margin-bottom: 0.4rem;
+    font-size: 10.5pt;
+    color: #000;
+  }
+
+  .page-cv .cv-contact,
+  .cv-contact a {
+    font-size: 9pt;
+    color: #333;
+  }
+
+  .cv-contact__icon {
+    width: 9pt;
+    height: 9pt;
+    color: #333;
+  }
+
+  /* The label already spells out the destination */
+  .cv-contact a[href^="http"]::after {
+    content: "";
   }
 
   h2 {
