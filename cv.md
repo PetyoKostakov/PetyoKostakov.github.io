@@ -33,24 +33,19 @@ and growing engineers into senior roles.
 
 #### Senior Software Development Manager <span class="cv-meta">Jul 2024 – Present · 2 yrs 3 mos</span>
 
-Managing two engineering teams (22 engineers total) across platform integration and regulatory
-technology.
+**Team: Partner Integrations** · Team size: 7
 
-**Partner Integrations** · Team of 7
+- **Owned delivery of microservices integrating third-party player account management (PAM) providers:** spanning user messaging/templating, session management, right of participation, and session timers—enabling PokerStars to be integrated into other company brands and extend liquidity across both PokerStars and partner brands, with services used across 20+ regulated markets.
+- **Led team transition into a new partner integrations domain with a scalable and flexible delivery framework:** Established a Figma-based framework that enabled strong planning, visibility, and adaptability—providing traceability for the whole team and proactive communication of timeline shifts to project management. Aligned Developers to tech-standard-driven breakdowns, QA to upfront test planning and risk identification, and Product to ticket ownership and closing the gap between architecture design and sprint inclusion.
+- **Consolidated three legacy teams into a unified PAM Operations Tools (OpTech) team:** Managed the merger of three teams with heavy legacy scope, driving knowledge transfer, CMDB documentation, and team autonomy across a complex product landscape.
 
-- Own delivery of microservices integrating third-party player account management providers,
-  enabling PokerStars to expand into new partner markets.
-- <!-- ADD: scale — how many integrations shipped? partners onboarded? -->
-- <!-- ADD: outcome — throughput, latency, or time-to-market improvement -->
+**Team: PAM OpTech** · Team size: 15
 
-**PAM OpTech** · Team of 15
-
-- Delivered UK Gambling Commission (UKGC) compliance workstreams, ensuring the player account
-  platform met regulatory requirements ahead of enforcement deadlines.
-- Led cloud transformation of legacy player account management services.
-- Built blacklist monitoring capability supporting responsible gambling and regulatory obligations.
-- Delivered CMP <!-- EXPAND: spell out this acronym — a hiring manager outside PokerStars
-  will not recognise it -->.
+- **Directed cross-functional "virtual teams" for high-stakes initiatives:** Assembled and led cross-team virtual squads to deliver the Blacklist monitoring and SOX compliance related to admin privilege auditing.
+- **Directed a company-wide AWS cloud transformation:** Oversaw migration of 10+ apps with 20+ services to AWS.
+- **Built operational excellence from the ground up:** Established an incident-management framework, PagerDuty on-call rotation, runbooks, and service guides, embedding a "shift-left" approach that surfaces monitoring, alerting, and risk needs during discovery and build.
+- **Drove Agile and Security maturity transformation across teams:** Led both engineering teams to Level 4 Agile maturity and achieved Level 3 Security CMM (SSDLC) compliance under revised assessment criteria, onboarding all applications with established vulnerability-management processes.
+- **Led end-to-end delivery of the Customer Management Platform (CMP):** integrating PokerStars with Salesforce via 6 microservices covering the full data lifecycle—import, retrieval, synchronization, and cleanup.
 
 #### Web Development Team Lead <span class="cv-meta">Jul 2018 – Jul 2024 · 6 yrs</span>
 
