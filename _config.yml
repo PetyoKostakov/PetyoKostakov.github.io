@@ -15,7 +15,9 @@ github_username: PetyoKostakov
 linkedin_username: petyokostakov
 
 # Build settings
-theme: minima
+# No gem-based theme: this site ships its own _layouts, _includes and
+# assets/main.css. Pulling in minima only added a second, conflicting
+# assets/main.css and a pile of Sass @import deprecation warnings.
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -42,8 +44,3 @@ exclude:
   - .DS_Store
   - .idea/
 
-# Minima theme settings
-minima:
-  social_links:
-    - { platform: github, user_url: "https://github.com/PetyoKostakov" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/petyokostakov/" }

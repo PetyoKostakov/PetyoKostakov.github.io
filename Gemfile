@@ -5,8 +5,9 @@ gem "jekyll", "~> 4.3.3"
 gem "csv", "~> 3.0"
 gem "base64", "~> 0.2"
 
-# Theme
-gem "minima", "~> 2.5"
+# Theme: none. The site uses its own layouts/includes/CSS, so no theme gem
+# is needed (minima was removed - it only contributed Sass deprecation noise).
+
 # Plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"

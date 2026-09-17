@@ -1,0 +1,12 @@
+{%- comment -%}
+  Local replacement for the include minima used to provide.
+  Only rendered when jekyll.environment == 'production' and site.google_analytics is set
+  (see _layouts/default.html), so it stays inert during local development.
+{%- endcomment -%}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
