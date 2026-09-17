@@ -51,7 +51,7 @@ and growing engineers into senior roles.
 
 **Agent Management** · Team of 6–8
 
-- <!-- ACTION REQUIRED: this is a six-year role currently carrying zero bullets — the single
+<!-- -  ACTION REQUIRED: this is a six-year role currently carrying zero bullets — the single
      largest gap in this CV. Cover: what the Agent Management platform did, its scale
      (users/markets/transactions), what you shipped, and how the team grew under you. -->
 
@@ -63,17 +63,18 @@ and growing engineers into senior roles.
 
 - Led front-end development of Effortel EMS, an end-to-end platform enabling mobile virtual
   network operators to manage business operations, billing, and network provisioning.
-- <!-- ADD: which operators or markets did this serve? -->
+<!-- - ADD: which operators or markets did this serve? -->
 
 ### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/sap_logo.jpeg' | relative_url }}" alt="" height="30">SAP</span> <span class="cv-meta">Oct 2014 – Mar 2017 · 2 yrs 6 mos</span>
 
 #### Software Developer, Front-end / Scrum Master <span class="cv-meta">Jan 2016 – Mar 2017</span>
 
-- <!-- ADD: which product? what did you build? what did the Scrum Master role cover? -->
+
+<!-- -  ADD: which product? what did you build? what did the Scrum Master role cover? -->
 
 #### Associate Software Developer, Front-end <span class="cv-meta">Oct 2014 – Jan 2016</span>
 
-- <!-- ADD: one line on scope and technologies -->
+<!-- - ADD: one line on scope and technologies -->
 
 ### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/cisco_logo.jpeg' | relative_url }}" alt="" height="30">Cisco</span> <span class="cv-meta">Jul 2013 – Oct 2014 · 1 yr 4 mos</span>
 
