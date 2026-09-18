@@ -83,9 +83,10 @@ Engineering leader with 13+ years in software development, 10 of them leading te
 
 **Agent Management** · Team of 6–8
 
-<!-- -  ACTION REQUIRED: this is a six-year role currently carrying zero bullets — the single
-     largest gap in this CV. Cover: what the Agent Management platform did, its scale
-     (users/markets/transactions), what you shipped, and how the team grew under you. -->
+- **AMPS (Account Management Player Summary):** Led delivery of the internal Agent Management platform enabling customer support to view and manage all player accounts and perform account actions; built a highly customisable UI with team-specific views and business logic, handling all regulatory administrative requirements including the Admin Real Money Form for compliant account changes.
+- **DSAR / Batch Operation Management framework:** Delivered a reusable framework for scheduling, transforming, and assembling large player datasets into human-readable outputs — reducing agent processing from **days to seconds**, eliminating human error, and providing full auditability; DSAR (its first implementation) lets agents self-serve compliant data extractions via a web UI.
+- **Stars Admin:** Delivered a SpringBoot/Kubernetes middle-tier microservice suite with a **federated GraphQL** schema (Apollo Federation), including report-data microservices, a GraphQL gateway, report-management APIs, and an Angular app rendering XML-based templates into reports.
+- **First team to implement Observability & QA Automation across all products:** Pioneered end-to-end observability (front-end and backend) and full QA automation ahead of all other squads — completing every requirement of the org's transformation initiatives first and becoming the reference model other teams followed.
 
 ### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/effortel_logo.jpeg' | relative_url }}" alt="" height="30">Effortel</span> <span class="cv-meta">Apr 2017 – Jul 2018 · 1 yr 4 mos</span>
 
