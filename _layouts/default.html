@@ -24,8 +24,15 @@
     {% seo title=false %}
   </head>
 
-  {%- assign body_class = page.permalink | default: '' | slugify -%}
-  {%- if body_class != '' -%}{%- assign body_class = body_class | prepend: 'page-' -%}{%- endif -%}
+  {%- comment -%}
+    Derive a body class from the permalink (e.g. /cv/ -> page-cv) so pages can be
+    styled individually. Guard the slugify call: passing an empty string makes
+    Jekyll log "Empty `slug` generated for ''" for every page without a permalink.
+  {%- endcomment -%}
+  {%- assign body_class = '' -%}
+  {%- if page.permalink and page.permalink != '' -%}
+    {%- assign body_class = page.permalink | slugify | prepend: 'page-' -%}
+  {%- endif -%}
   <body class="{{ body_class }}">
     {%- include header.html -%}
 
