@@ -1174,15 +1174,15 @@ label {
   }
 
   h1 {
-    font-size: 19pt;
-    margin: 0 0 0.2rem;
+    font-size: 16pt;
+    margin: 0 0 0.15rem;
   }
 
   /* Flatten the header card: no fill, no rounding, tighter spacing */
   .cv-header {
-    gap: 1rem;
-    margin: 0 0 0.9rem;
-    padding: 0 0 0.6rem;
+    gap: 0.8rem;
+    margin: 0 0 0.6rem;
+    padding: 0 0 0.45rem;
     border: none;
     border-bottom: 1px solid #999;
     border-radius: 0;
@@ -1191,8 +1191,8 @@ label {
   }
 
   .cv-photo {
-    width: 78pt;
-    height: 78pt;
+    width: 62pt;
+    height: 62pt;
     box-shadow: none;
     border: 1px solid #ccc;
     -webkit-print-color-adjust: exact;
@@ -1200,24 +1200,29 @@ label {
   }
 
   .page-cv .cv-name {
-    font-size: 19pt;
+    font-size: 16pt;
   }
 
   .cv-role {
-    margin-bottom: 0.4rem;
-    font-size: 10.5pt;
+    margin-bottom: 0.25rem;
+    font-size: 9.5pt;
+    letter-spacing: 0.04em;
     color: #000;
+  }
+
+  .page-cv .cv-contacts {
+    gap: 0.15rem 0.9rem;
   }
 
   .page-cv .cv-contact,
   .cv-contact a {
-    font-size: 9pt;
+    font-size: 8.5pt;
     color: #333;
   }
 
   .cv-contact__icon {
-    width: 9pt;
-    height: 9pt;
+    width: 8.5pt;
+    height: 8.5pt;
     color: #333;
   }
 
