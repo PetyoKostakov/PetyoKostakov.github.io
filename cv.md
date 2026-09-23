@@ -47,7 +47,7 @@ permalink: /cv/
 
 ## Professional Summary
 
-Engineering leader with 13+ years in software development, 10 of them leading teams in product companies. Currently a Senior Software Development Manager at Flutter Entertainment, delivering platform integrations and regulatory technology across 20+ regulated markets. Experienced in microservice architecture, highly customizable front-end applications, cloud transformation, and agile/security maturity—with a focus on operational excellence and growing engineers into senior roles.
+Engineering leader with 13+ years in software development, 10 of them leading teams in product companies. Currently a Senior Software Development Manager at Flutter Entertainment, delivering platform integrations and regulatory technology across 20+ regulated markets. Experienced in microservice architecture, highly customizable front-end applications, cloud transformation, agile/security maturity, operational excellence and growing engineers into senior roles.
 
 ## Experience
 
