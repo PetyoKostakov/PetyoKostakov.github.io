@@ -49,16 +49,6 @@ permalink: /cv/
 
 Engineering leader with 13+ years in software development, 10 of them leading teams in product companies. Currently a Senior Software Development Manager at Flutter Entertainment, delivering platform integrations and regulatory technology across 20+ regulated markets. Experienced in microservice architecture, highly customizable front-end applications, cloud transformation, and agile/security maturity—with a focus on operational excellence and growing engineers into senior roles.
 
-## Core Competencies
-
-**Leadership** — Team management · Roadmap & delivery planning · Agile/Scrum · Hiring & mentoring · Stakeholder management
-
-**Technical** — Microservice architecture · Front-end development · Cloud transformation · Systems integration
-
-**Domain** — Regulatory compliance (UKGC) · Player account management · iGaming
-
-**Technologies** — JavaScript, Java, AWS,  SQL, Kafka,  Angular, k8s,  Docker
-
 ## Experience
 
 ### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/flutter_international_logo.jpeg' | relative_url }}" alt="" height="30">Flutter Entertainment — PokerStars</span> <span class="cv-meta">Jul 2018 – Present · 8 yrs 3 mos</span>
@@ -122,6 +112,16 @@ Engineering leader with 13+ years in software development, 10 of them leading te
 **MSc, Computer Systems and Technologies** — Technical University of Sofia · 2012 – 2014
 
 **BSc, Electrical Engineering and Electrical Installations** — Technical University of Sofia · 2008 – 2012
+
+## Core Competencies
+
+**Leadership** — Team management · Roadmap & delivery planning · Agile/Scrum · Hiring & mentoring · Stakeholder management
+
+**Technical** — Microservice architecture · Front-end development · Cloud transformation · Systems integration
+
+**Domain** — Regulatory compliance (UKGC) · Player account management · iGaming
+
+**Technologies** — JavaScript, Java, AWS,  SQL, Kafka,  Angular, k8s,  Docker
 
 ---
 
