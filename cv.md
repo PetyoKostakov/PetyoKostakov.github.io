@@ -47,21 +47,18 @@ permalink: /cv/
 
 ## Professional Summary
 
-Senior Software Development Manager with 13+ years in software development, including 10 years leading teams. Currently at Flutter Entertainment, driving platform integrations and regulatory technology across 20+ markets. Expertise in microservices, front-end development, cloud transformation, and agile practices.
+Engineering leader with 13+ years in software development, 10 of them leading teams in product companies. Currently a Senior Software Development Manager at Flutter Entertainment, delivering platform integrations and regulatory technology across 20+ regulated markets. Skilled in microservice architecture, cloud transformation, operational excellence, agile practices and growing engineers into senior roles.
 
 ## Experience
 
 ### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/flutter_international_logo.jpeg' | relative_url }}" alt="" height="30">Flutter Entertainment — PokerStars</span> <span class="cv-meta">Jul 2018 – Present · 8 yrs 3 mos</span>
 
 #### Senior Software Development Manager <span class="cv-meta">Jul 2024 – Present · 2 yrs 3 mos</span>
-
 **Team: Partner Integrations** · Team size: 7
-
-- **Owned delivery of microservices integrating third-party Player Account Management providers:** Мicroservices spanning accross user messaging/templating, session management, right of participation, and session timers—enabling PokerStars to be integrated into other company brands and extend liquidity across both PokerStars and partner brands, with services used across 20+ regulated markets.
+- **Owned delivery of microservices integrating third-party Player Account Management providers:** Microservices spanning across user messaging/templating, session management, right of participation, and session timers—enabling PokerStars to be integrated into other company brands and extend liquidity across both PokerStars and partner brands, with services used across 20+ regulated markets.
 - **Led team transition into a new partner integrations domain with a scalable and flexible delivery framework:** Established a Figma-based framework that enabled strong planning, visibility, and adaptability—providing traceability for the whole team and proactive communication of timeline shifts to project management. Aligned Developers to tech-standard-driven breakdowns, QA to upfront test planning and risk identification, and Product to ticket ownership and closing the gap between architecture design and sprint inclusion.
 
 **Subtribe: Operations Technologies** · Subtribe size: 15
-
 - **Consolidated three legacy teams into a unified Operations Technology team:** Managed the merger of three teams with heavy legacy scope, driving knowledge transfer, CMDB documentation, and team autonomy across a complex product landscape. Areas of work included Regulatory Compliance, Agent Management, System Reports, and Customer Assistance.
 - **Directed cross-functional "virtual teams" for high-stakes initiatives:** Assembled and led cross-team virtual squads to deliver the Blacklist monitoring and SOX compliance related to admin privilege auditing.
 - **Directed a company-wide AWS cloud transformation:** Oversaw migration of 10+ apps with 20+ services to AWS.
@@ -70,35 +67,25 @@ Senior Software Development Manager with 13+ years in software development, incl
 - **Led end-to-end delivery of the Customer Management Platform:** integrating PokerStars with Salesforce via 6 microservices covering the full data lifecycle—import, retrieval, synchronization, and cleanup.
 
 #### Web Development Team Lead <span class="cv-meta">Jul 2018 – Jul 2024 · 6 yrs</span>
-
 **Agent Management** · Team size: 6–8
-
 - **Agent Management Platform:** Led delivery of the internal Agent Management platform enabling customer support to view and manage all player accounts and perform account actions; built a highly customisable UI with team-specific views and business logic, handling all regulatory administrative requirements including the Admin Real Money Form for compliant account changes.
-- **Data Subject Access Reques/Batch Operation Management framework:** Delivered a reusable framework for scheduling, transforming, and assembling large player datasets into human-readable outputs — reducing agent processing from **days to seconds**, eliminating human error, and providing full auditability; Web App lets agents self-serve compliant data extractions.
+- **Data Subject Access Request/Batch Operation Management framework:** Delivered a reusable framework for scheduling, transforming, and assembling large player datasets into human-readable outputs — reducing agent processing from **days to seconds**, eliminating human error, and providing full auditability; Web App lets agents self-serve compliant data extractions.
 - **Reporting Platform:** Delivered a SpringBoot/Kubernetes middle-tier microservice suite with a **federated GraphQL** schema (Apollo Federation), including report-data microservices, a GraphQL gateway, report-management APIs, and an Angular app rendering XML-based templates into reports.
 - **Observability & QA Automation across all products:** Pioneered end-to-end observability (front-end and backend) and full QA automation ahead of all other squads — completing every requirement of the org's transformation initiatives first and becoming the reference model other teams followed.
 
-
 ### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/effortel_logo.jpeg' | relative_url }}" alt="" height="30">Effortel</span> <span class="cv-meta">Apr 2017 – Jul 2018 · 1 yr 4 mos</span>
-Leading a team of 6 front-end engineers in the development of web platform for Mobile Virtual Network Operators (MVNOs), focusing on front-end architecture, user experience, and integration with back-end services.
-
 #### Web Development Team Lead
-
+Led a team of 6 front-end engineers building a web platform for Mobile Virtual Network Operators (MVNOs).
 
 ### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/sap_logo.jpeg' | relative_url }}" alt="" height="30">SAP</span> <span class="cv-meta">Oct 2014 – Mar 2017 · 2 yrs 6 mos</span>
-Working on SAPUI5, a front-end framework for building enterprise web applications. 
-
 #### Software Developer, Front-end / Scrum Master <span class="cv-meta">Jan 2016 – Mar 2017</span>
-
 #### Associate Software Developer, Front-end <span class="cv-meta">Oct 2014 – Jan 2016</span>
-
+Contributed to SAPUI5, SAP's front-end framework for building enterprise web applications.
 
 ### <span class="cv-org"><img class="cv-logo" src="{{ '/assets/cisco_logo.jpeg' | relative_url }}" alt="" height="30">Cisco</span> <span class="cv-meta">Jul 2013 – Oct 2014 · 1 yr 4 mos</span>
-Working on various project in area of Project Management Timeline App, Cisco WebEx Social/Collaboration Platform, Automation Framework Web UI and Innovation Project Management Web App.
-
 #### Software Engineer <span class="cv-meta">Oct 2013 – Oct 2014</span>
-
 #### Intern Developer <span class="cv-meta">Jul 2013 – Sep 2013</span>
+Developed internal web apps including a Project Management Timeline App and the Cisco WebEx Social/Collaboration Platform.
 
 ## Education
 
@@ -107,14 +94,13 @@ Working on various project in area of Project Management Timeline App, Cisco Web
 **BSc, Electrical Engineering and Electrical Installations** — Technical University of Sofia · 2008 – 2012
 
 ## Core Competencies
-
-**Leadership** — Team management · Roadmap & delivery planning · Agile/Scrum · Hiring & mentoring · Stakeholder management
+**Leadership** — Team management · Delivery planning · Agile/Scrum · Hiring & mentoring · Stakeholder management
 
 **Technical** — Microservice architecture · Front-end development · Cloud transformation · Systems integration
 
 **Domain** — Player account management · Regulatory compliance · Reporting · Operations Technology
 
-**Technologies** — JavaScript, Java, AWS,  SQL, Kafka,  Angular, k8s,  Docker
+**Technologies** — JavaScript · Java · AWS · SQL · Kafka · Angular · k8s · Docker
 
 ---
 
