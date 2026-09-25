@@ -94,13 +94,13 @@ Developed internal web apps including a Project Management Timeline App and the 
 **BSc, Electrical Engineering and Electrical Installations** — Technical University of Sofia · 2008 – 2012
 
 ## Core Competencies
-**Leadership** — Team management · Delivery planning · Agile/Scrum · Hiring & mentoring · Stakeholder management
+**Leadership** — Team management & org design · Delivery planning · Agile/Scrum · Operational excellence · Hiring & mentoring · Stakeholder management
 
-**Technical** — Microservice architecture · Front-end development · Cloud transformation · Systems integration
+**Technical** — Microservice architecture · API design (GraphQL/REST) · Front-end development · Cloud transformation · Observability · CI/CD & QA automation
 
-**Domain** — Player account management · Regulatory compliance · Reporting · Operations Technology
+**Domain** — Player account management · Regulatory compliance · Reporting · Operations Technology · Integrations
 
-**Technologies** — JavaScript · Java · AWS · SQL · Kafka · Angular · k8s · Docker
+**Technologies** — JavaScript · TypeScript · Java · Spring Boot · Angular · AWS · Kubernetes · Docker · Kafka · SQL · GraphQL
 
 ---
 
